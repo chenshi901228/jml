@@ -1,0 +1,623 @@
+
+*{
+    font-family: "微软雅黑", "黑体";
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+}
+
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    top:100px;
+}  
+.swiper-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.brand-title{
+    display: none;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #fff;
+    padding: 66px 14% 90px 14%;
+    text-align: center 
+}
+.brand-title>h1{
+    font-size: 40px;
+}
+.brand-title>p{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 16px;
+}
+.brand-title>span{
+    font-size: 24px
+}
+.brand-title>span::after{
+    content: '';
+    width: 16px;
+    height: 2px;
+    background-color: #707070;
+    margin: 20px auto 34px auto;
+    display: block;
+}
+.brand-title ul{
+    display: flex;
+    padding-left: 0;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.brand-title li{
+    margin: 0 4%;
+    text-align: left
+}
+.brand-title li h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.brand-title li p{
+    font-size: 14px;
+    line-height: 28px;
+    margin: 0
+}
+.brand-title li a{
+    text-decoration: none;
+    color: #000;
+}
+.brand-title li a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #949494;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+.brand-title li:hover a::after{
+    width: 100%
+}
+
+/* .content{
+    display: none;
+    transition: all .7s
+} */
+article{
+    display: none;
+    transition: all .7s;
+    width: 1500px;
+    margin: 0 auto;
+    /* height: 2000px; */
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+
+
+article .brand-anli-nav .top{
+    width: 30%;
+    height: 74px;
+    background-color: #2d2d2d;
+    overflow: hidden;
+    line-height: 74px;
+    color: #fff;
+    padding: 0 20px
+}
+article .brand-anli-nav .top p{
+    font-size: 18px
+}
+article .brand-anli-nav .top::before{
+    float: left;
+    width: 4%;
+    height: 3px;
+    background-color: #fff;
+    content: '';
+    margin-top: 36px;
+    margin-right: 10px;
+}
+article .brand-anli-nav .bottom{
+    position: relative;
+}
+article .brand-anli-nav .left{
+    width: 50%;
+    height: 308px;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 66px 140px 66px 40px;
+    line-height: 30px;
+    font-size: 18px;
+}
+article .brand-anli-nav .right{
+    width: 60%;
+    height: 248px;
+    position: absolute;
+    padding: 40px 38px;
+    right: 0;
+    top: 0;
+    background-color: #e9e9e9;
+}
+article .brand-anli-nav .right h5{
+    font-weight: normal;
+    font-size: 20px
+}
+article .brand-anli-nav .right ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+article .brand-anli-nav .right li{
+    margin-left: 20px;
+    margin-top: 10px
+}
+article .brand-anli-nav li a{
+    color: #696969;
+    font-size: 14px;
+    line-height: 26px;
+    padding-right: 20px;
+    border-right: 1px solid #696969;
+}
+article .brand-anli-nav .left img{
+    width: initial;
+    margin-top: 58px;
+}
+
+
+article .classify{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-top: 20px;
+}
+article .classify-pic{
+    width: 70%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+article .classify-pic img{
+    position: absolute;
+}
+article .classify img{
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+}
+article .classify-pic b{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    padding: 220px 320px 19px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+article .classify-pic p::before,article .classify-pic p::after{
+    content: '';
+    width: 95px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin: 2px 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -47.5px;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+article .classify-pic p::before{
+    top: 214px;
+}
+article .classify-pic:hover{
+    cursor: pointer;
+}
+article .classify-pic:hover img{
+    transform: scale(1.2)
+}
+article .classify-pic:hover b{
+    opacity: 1;
+}
+article .classify-pic:hover p::before{
+    transform: scaleX(0.1)
+}
+article .classify-pic:hover p::after{
+    transform: scaleX(0.1)
+}
+article .classify-info{
+    width: 30%;
+    background-color: #333;
+    padding: 56px 50px;
+    color: #fff
+}
+article .classify-info>p:first-child{
+    color: #adadad
+}
+article .classify-info>p:nth-child(3){
+    color: #adadad;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+article .classify-info p{
+    margin-bottom: 0;
+}
+article .classify-info a{
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+article .classify-info img{
+    width: 100%;
+    height: 100%;
+}
+
+
+article .classify1{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+article .classify1-m{
+    width: 49%;
+    height: 500px;
+    position: relative;
+}
+article .classify1-m-pic{
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+article .classify1-m-pic:hover{
+    cursor: pointer;
+}
+article .classify1-m-pic:hover img{
+    transform: scale(1.2)
+}
+article .classify1-m-pic:hover b::before,article .classify1-m-pic:hover b::after{
+    transform: scaleX(0.1)
+}
+article .classify1-m-pic:hover b{
+    opacity: 1;
+}
+article .classify1-m-pic b{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    padding: 140px 220px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+article .classify1-m-pic b::before{
+    top: 128px
+}
+article .classify1-m-pic b::before,article .classify1-m-pic b::after{
+    content: '';
+    width: 95px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin: 2px 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -47.5px;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+article .classify1-m-pic img{
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+    position: absolute;
+}
+article .classify1-m .title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    background-color: #2f2f2f;
+    padding: 34px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+article .classify1-m .title p{
+    line-height: 24px;
+    font-size: 14px;
+    color: #878787;
+}
+article .classify1-m .title h1{
+    font-size: 24px;
+    color: #fff;
+}
+article .classify1-m .title img{
+    width: 46px;
+    height: 46px;
+}
+
+
+article>a{
+    height: 64px;
+    width: 100%;
+    background-color: #2d2d2d;
+    line-height: 64px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin: 20px 0;
+}
+article>a:hover{
+    text-decoration: none;
+    color: #fff
+}
+
+
+article .brand-design{
+    width: 100%;
+    padding: 76px 0 68px 0;
+    margin-bottom: 16px;
+    background-color: #fff;
+    text-align: center;
+}
+article .brand-design h1{
+    font-size: 48px;
+    font-weight: normal
+}
+article .brand-design ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around
+}
+article .brand-design p:nth-child(2){
+    font-size: 18px;
+    margin-top: 14px;
+}
+article .brand-design>p:nth-child(2)::after{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin: 24px auto;
+    background-color: #aaa;
+}
+article .brand-design li p{
+    font-family: "微软雅黑", "黑体";
+    font-size: 20px;
+}
+article .brand-design>p:last-child{
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 38px;
+}
+article>img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+article .brand-client{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #fff;
+}
+article .brand-client h1{
+    font-size: 48px;
+    font-weight: normal
+}
+article .brand-client img{
+    width: 100%;
+    height: auto;
+}
+article .brand-client p{
+    font-size: 18px;
+    margin-top: 14px;
+}
+article .brand-client p::after{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin: 24px auto;
+    background-color: #aaa;
+}
+
+
+article .form{
+    width: 100%;
+    overflow: hidden;
+    padding: 0 60px;
+    margin-top: 20px;
+    background-color: #fff; 
+}
+article .form h1{
+    font-size: 24px;
+    margin: 46px 0 54px 0;
+    font-weight: normal;
+}
+article .form>div{
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+}
+article .form .left{
+    border-right: 1px solid #aaa;
+    padding-right: 80px;
+    margin-right: 10%;
+}
+article .form .left img{
+    margin-right: 10px;
+}
+article .form .left p{
+    font-size: 16px;
+}
+article .form .left a{
+    display: block;
+    width: 235px;
+    line-height: 46px;
+    height: 46px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 22px;
+    text-align: center;
+    font-size: 18px;
+}
+article .right h4{
+   font-weight: normal;
+   margin-bottom: 22px;
+}
+article .right input{
+    height: 46px;
+    outline: none;
+}
+article .right input:not(:last-child){
+    width: 240px;
+    margin-right: 20px;
+    text-indent: 1.6em
+}
+article .right .sub{    
+    width: 98px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: none
+}
+
+
+article .link{
+    width: 100%;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+article .link p{
+    font-size: 18px;
+    margin: 0;
+    border-right: 1px solid #999;
+    padding:10px 10px 10px 0;
+}
+article .link ul{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0
+}
+article .link li{
+    font-size: 16px;
+    margin-right: 20px;
+    line-height: 30px;
+    color: #6e6e6e
+}
+article .link a{
+    text-decoration: none;
+    color: #6e6e6e
+}
+
+article .dynamic{
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 40px 20px 74px;
+}
+article .dynamic-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+article .dynamic-title h5{
+    font-size: 36px;
+    font-weight: normal
+}
+article .dynamic-title h5::before{
+    content: '';
+    display: block;
+    width: 18px;
+    height: 4px;
+    background-color: #717171;
+    float: left;
+    margin-top: 22px;
+    margin-right: 24px;    
+}
+article .dynamic-title a{
+    text-decoration: none;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    color: black;
+    background: transparent;
+}
+article .dynamic ul{
+    margin-top: 30px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between
+}
+article .dynamic li{
+    width: 31%
+}
+article .dynamic li:hover{
+    cursor: pointer;
+}
+article .dynamic li>img{
+    width: 100%;
+    height: auto;
+}
+article .dynamic .word{
+    border-bottom: 1px solid #8d8d8d;
+    padding-bottom: 38px;
+    margin-bottom: 15px;
+}
+article .dynamic .word h5{
+    height: 58px;
+    font-size: 22px;
+    color: #3f3f3f;
+    margin: 32px 0 12px 0;
+}
+article .dynamic .word p{
+    font-size: 12px;
+    color: #3f3f3f;
+    line-height: 24px;
+    display: block;
+    height: 48px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+article .dynamic .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+article .dynamic .bottom p{
+    font-size: 18px;
+    margin: 0
+}
+article .dynamic .bottom img{
+    width: 50px;
+    height: 10px;
+}

@@ -1,0 +1,230 @@
+
+
+
+a:hover{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(243, 243, 243);
+}
+article{
+    width: 1500px;
+    margin: 0 auto;
+    /* height: 2000px; */
+    padding: 0;
+    padding-bottom: 50px;
+    background-color: rgb(243, 243, 243)  ;
+}
+article>div{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 100px;
+    background-color: #333;
+    z-index: 4;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center
+}
+nav li{
+    width: 8%;
+    height: 50px;
+    margin-right: 6px;
+    transition: all .5s;
+}
+nav a{
+    color: #e0e0e0;
+    display: block;
+    height: 100%;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    background: transparent
+}
+nav a:hover{
+    text-decoration: none;
+    color: #e0e0e0;
+}
+nav li:hover{
+    background-color: #8F8F8F 
+}
+
+.bgc{
+    background-color: #8F8F8F 
+}
+
+
+
+article .about-show .logo img{
+    width: 100%;
+    height: auto;
+}
+article .about-show .title{
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 29%;
+}
+article .about-show .title p{
+    color: #666;
+    line-height: 28px;
+    margin-top: 34px;
+    font-size: 16px;
+}
+article .about-show .about-twopic{
+    position: relative;
+}
+article .about-show .about-twopic img:first-child{
+    width: 100%;
+    height: auto;
+}
+article .about-show .about-twopic img:last-child{
+    position: absolute;
+    top: 30%;
+    left: 14%
+}
+article .about-show .about-spe{
+    background-color: #fff;
+    padding: 140px 20%;
+    display: flex;
+    justify-content: space-around;
+}
+article .about-show .about-spe img:nth-child(2n+1){
+    margin-top: 70px
+}
+article .about-show .about-spe img:nth-child(2n){
+    margin-bottom: 70px
+}
+article .about-show .about-idear{
+    display: flex;
+}
+article .about-show .about-idear>div{
+    width: 50%;
+    overflow: hidden;
+}
+article .about-show .about-idear img{
+    width: 100%;
+    height: 100%;    
+    transition: all .5s;
+}
+article .about-show .about-idear img:hover{
+    transform: scale(1.2)
+}
+article .about-idear .about-idear-info{
+    background-color: #f7f7f7;
+    padding: 108px 126px;
+}
+article .about-idear .about-idear-info p{
+    line-height: 30px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+article .about-parent{
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 80px 60px;
+    border-bottom: 1px solid #e0e0e0
+}
+article .about-parent h1{
+    font-size: 30px;
+    margin-bottom: 90px;
+}
+.swiper-container{
+    width: 100%;
+    height: 400px;
+}
+.swiper-container img{
+    width: 100%;;
+    height: 100%;
+}
+
+
+article{
+    margin-top: 150px;
+}
+
+
+article h4 a:hover{
+    text-decoration: none;
+    color: #6a6a6a;
+}
+article h4 a{
+    text-decoration: none;
+    color: #6a6a6a;
+}
+article h4{
+    color: #6a6a6a;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+
+article .about-information{
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 0 80px
+}
+article .about-information h2{
+    font-size: 22px;
+}
+article .about-information h1{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+article .about-information img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle
+}
+article .about-information p{
+    color: #6e6e6e;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+article .link{
+    width: 100%;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+article .link p{
+    font-size: 18px;
+    margin: 0;
+    border-right: 1px solid #999;
+    padding:10px 10px 10px 0;
+}
+article .link ul{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0
+}
+article .link li{
+    font-size: 16px;
+    margin-right: 20px;
+    line-height: 30px;
+    color: #6e6e6e
+}
+article .link a{
+    text-decoration: none;
+    color: #6e6e6e
+}

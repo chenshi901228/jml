@@ -1,0 +1,246 @@
+body{
+    background-color: rgb(243, 243, 243)
+}
+article{
+    width: 1500px;
+    margin: 0 auto;
+    /* height: 2000px; */
+    padding: 0;
+    padding-bottom: 150px;
+    background-color: rgb(243, 243, 243)  ;
+    position: relative;
+    top: 150px;
+    z-index: 3;
+}
+
+
+
+article h4 a:hover{
+    text-decoration: none;
+    color: #6a6a6a;
+}
+article h4 a{
+    text-decoration: none;
+    color: #6a6a6a;
+}
+article h4{
+    color: #6a6a6a;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+
+article .title{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+article .title p{
+    margin: 40px 0 20px;
+}
+article .title-nav a{
+    display: inline-block;
+    width: 168px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #b41b1d;
+    text-decoration: none
+}
+article .title-nav a:not(:first-child){
+    background-color: #737373;
+    margin-left: 10px;
+}
+
+
+
+
+article .appDevelop{
+    width: 100%;
+    margin-top: 20px;
+}
+article .appDevelop .pro-normal{
+    width: 24.6%;
+    /* height: 440px; */
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 20px;
+}
+article .appDevelop .pro-normal p{
+    font-size: 18px;
+    font-weight: normal
+}
+article .appDevelop .pro-normal div{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+article .appDevelop .pro-normal>p:last-child{
+    font-size: 14px;
+    color: #999
+}
+article .appDevelop .pro-wid p{
+    font-size: 18px;
+    font-weight: normal
+}
+article .appDevelop .pro-wid>p:last-child{
+    font-size: 14px;
+    color: #999
+}
+article .appDevelop .pro-wid{
+    width: 49.6%;
+    /* height: 440px; */
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 20px;
+}
+article .appDevelop .pro-wid div{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+article .appDevelop .pro-wid div b,article .appDevelop .pro-normal div b{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    padding: 158px 140px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+article .appDevelop .pro-wid b p,article .appDevelop .pro-normal b p{
+    font-size: 16px;
+}
+article .appDevelop .pro-wid div:hover,article .appDevelop .pro-normal div:hover{
+    cursor: pointer;
+}
+article .appDevelop .pro-wid:hover>p:nth-child(2),article .appDevelop .pro-normal:hover>p:nth-child(2){
+    color: #b41b1d;
+}
+article .appDevelop .pro-wid:hover b,article .appDevelop .pro-normal:hover b{
+    opacity: 1;
+}
+article .appDevelop .pro-wid:hover img,article .appDevelop .pro-normal:hover img{
+    transform: scale(1.2)
+}
+article .appDevelop .pro-wid:hover p::before,article .appDevelop .pro-normal:hover p::after{
+    transform: scaleX(0.1)
+}
+article .appDevelop .pro-wid:hover p::after,article .appDevelop .pro-normal:hover p::before{
+    transform: scaleX(0.1)
+}
+article .appDevelop b p::before{
+    top: 150px;
+}
+article .appDevelop b p::before,article .appDevelop b p::after{
+    content: '';
+    width: 95px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin: 2px 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -47.5px;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+article .appDevelop>div img{
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+    position: absolute;
+}
+article .appDevelop>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+article .dynamic-pagination{
+    margin-top: 40px;
+}
+article .dynamic-pagination ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+article .dynamic-pagination a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    line-height: 40px;
+}
+article .dynamic-pagination li{
+    margin-right: 4px;
+}
+
+
+
+article .findmore{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+article .findmore h5{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+article .findmore ul{
+    width: 100%;
+    padding: 0;
+    display: flex;
+}
+article .findmore li{
+    width: 33.3%;
+}
+article .findmore img{
+    width: 100%;
+    height: auto;
+}
+
+article .link{
+    width: 100%;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 80px;
+}
+article .link p{
+    font-size: 18px;
+    margin: 0;
+    border-right: 1px solid #999;
+    padding:10px 10px 10px 0;
+}
+article .link ul{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0
+}
+article .link li{
+    font-size: 16px;
+    margin-right: 20px;
+    line-height: 30px;
+    color: #6e6e6e
+}
+article .link a{
+    text-decoration: none;
+    color: #6e6e6e
+}

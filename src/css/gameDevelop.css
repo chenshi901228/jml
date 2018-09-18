@@ -1,0 +1,547 @@
+
+
+body{
+    background-color: rgb(243, 243, 243)
+}
+article{
+    width: 1500px;
+    margin: 0 auto;
+    /* height: 2000px; */
+    padding: 0;
+    padding-bottom: 50px;
+    background-color: rgb(243, 243, 243)  ;
+}
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    top:100px;
+}  
+.swiper-container img{
+    width: 100%;
+    height: 100%;
+}
+article{
+    margin-top: 100px;
+}
+article h4 a:hover{
+    text-decoration: none;
+    color: #6a6a6a;
+}
+article h4 a{
+    text-decoration: none;
+    color: #6a6a6a;
+}
+article h4{
+    color: #6a6a6a;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+
+
+article .mar-one{
+    background-color: #fff;
+    padding: 55px 100px 54px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article .mar-one ul{
+    width: 100%; 
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+article .mar-one ul li{
+    position: relative;
+    width: 25%;
+}
+article .mar-one ul div{
+    width: 1px;
+    height: 80px;
+    position: absolute;
+    top: 44px;
+    right: 0px;
+    background-color: #dedede;
+}
+article .mar-one ul h3{
+    margin: 34px 0 24px 0;
+    color: #b41b1d;
+}
+article .mar-one>p{
+    padding: 44px 220px 55px 220px;
+}
+article .mar-one ul p{
+    line-height: 30px;
+}
+article .mar-one ol{
+    margin-top: 92px;
+    display: flex;
+    align-items: center;
+}
+article .mar-one a{
+    text-decoration: none;
+    font-size: 16px
+}
+article .mar-one ol li:nth-child(1) a,article .mar-one ol li:nth-child(2) a{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    color: #fff;
+}
+article .mar-one ol li:nth-child(1) a{
+    background-color: #b41b1d;
+    margin-right: 10px;
+}
+article .mar-one ol li:nth-child(2) a{
+    background-color: #333;
+    margin-right: 34px;
+}
+
+
+
+article .game-ad{
+    padding: 108px 116px 60px;
+    background: url(../images/gameDevelop/banner_01.jpg) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+article .game-ad>p{
+    margin-top: 26px;
+}
+article .game-ad>p>span:first-child{
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    background-color: #bdbdbd;
+    position: relative;
+    top: -3px;
+    margin: 0 26px 0;
+}
+article .game-ad>p>span:last-child{
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    background-color: #bdbdbd;
+    position: relative;
+    top: -3px;
+    margin: 0 26px 0;
+}
+article .game-ad ul{
+    width: 100%;
+    display: flex;
+    padding-left: 0;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+}
+article .game-ad li{
+    width: 25%;
+}
+article .game-ad li p{
+    font-size: 16px;
+    margin-top: 30px;
+}
+article .game-ad li span{
+    width: 20px;
+    height: 3px;
+    display: inline-block;
+    background-color: #b41b1d;
+}
+article .game-ad img{
+    transition: all 0.3s ease-in-out 0s;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+article .game-ad li:hover img{
+    top: -24px;
+}
+
+
+
+
+article .game-process{
+    width: 100%;
+    padding: 60px 116px 80px;
+    background-color: #fff;
+    margin-top: 24px;
+    text-align: center;
+}
+article .game-process>p{
+    color:rgba(51, 51, 51, .8);
+    margin-top: 12px;
+    margin-bottom: 60px;
+}
+article .game-process ul,article .game-process ol{
+    width: 100%;
+    display: flex;
+}
+article .game-process li{
+    color: #6a6a6a;
+    text-align: left
+}
+article .game-process ul>li:not(:last-child){
+    width: 29%;
+}
+article .game-process ul>li:last-child{
+    width: 13%;
+}
+article .game-process ol>li:not(:last-child){
+    width: 29%;
+}
+article .game-process ol>li:last-child{
+    width: 13%;
+}
+article .game-process li img:nth-child(2){
+    position: relative;
+    left: 38px;
+}
+article .game-process li p:nth-child(3){
+    color: #333333;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+article .game-process li p:nth-child(4){
+    color: #333333;
+    font-size: 18px;
+}
+article .game-process li p:nth-child(5){
+    color: rgba(51, 51, 51, .8);
+    font-size: 14px;
+    margin-top: 20px;
+}
+article .game-process>div{
+    text-align: right;
+    margin: 20px 9% 20px 0;
+}
+article .game-process li:hover p{
+    color: #b41b1d
+}
+
+
+article .game-why{
+    width: 100%;
+    padding-top: 48px;
+    background-color: #fff;
+    margin-top: 24px;
+}
+article .game-why-title{
+    width: 100%;
+    text-align: center;
+}
+article .game-why-title p{
+    color: rgba(51, 51, 51, .8);
+    margin-top: 20px;
+}
+article .game-why-main{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-top: 50px;
+}
+article .game-why-main>a{
+    width: 70%;
+    overflow: hidden;
+    background: #000;
+}
+article .game-why-main img{
+    width: 100%;
+    height: 400px;
+    transition: all .4s;
+}
+article .game-why-main img:hover{
+    transform: scale(1.1);
+}
+article .game-why-main .classify-info{
+    width: 30%;
+    background-color: #333;
+    padding: 56px 50px;
+    color: #fff 
+}
+article .game-why-main .classify-info p{
+    line-height: 30px;
+    margin-top: 60px;
+}
+article .game-why-main1{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+article .game-why-main1>div{
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+article .game-why-main1 img{
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+}
+article .game-why-main1 img:hover{
+    transform: scale(1.1);
+}
+article .game-why-main1 .mask{
+    width: 100%;
+    height: 112px;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    color: #fff;
+    padding-left: 8%;
+}
+
+
+article .classify-title{
+    width: 100%;
+    height: 140px;
+    padding: 50px 70px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+article .classify-title-h1{
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-right: 30px;
+}
+article .classify-title-h1 span{
+    display: block;
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+article .classify-title>div:last-child{
+    display: flex;
+    align-items: center;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+article .classify-title>div:last-child a{
+    text-decoration: none;
+    color: #e0e0e0
+}
+article .classify-title>div:last-child p{
+    margin-bottom: 0;
+}
+article .classify-title>div:last-child img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+
+article .classify{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-top: 20px;
+}
+article .classify-pic{
+    width: 70%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+article .classify-pic img{
+    position: absolute;
+}
+article .classify img{
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+}
+article .classify-pic b{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    padding: 220px 320px 19px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+article .classify-pic p::before,article .classify-pic p::after{
+    content: '';
+    width: 95px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin: 2px 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -47.5px;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+article .classify-pic p::before{
+    top: 214px;
+}
+article .classify-pic:hover{
+    cursor: pointer;
+}
+article .classify-pic:hover img{
+    transform: scale(1.2)
+}
+article .classify-pic:hover b{
+    opacity: 1;
+}
+article .classify-pic:hover p::before{
+    transform: scaleX(0.1)
+}
+article .classify-pic:hover p::after{
+    transform: scaleX(0.1)
+}
+article .classify-info{
+    width: 30%;
+    background-color: #333;
+    padding: 56px 50px;
+    color: #fff
+}
+article .classify-info>p:first-child{
+    color: #adadad
+}
+article .classify-info>p:nth-child(3){
+    color: #adadad;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+article .classify-info div{
+    margin-top: 100px; 
+    width: 150px;
+    height: 40px;
+    background-color: #636363;
+    text-align: center;
+}
+article .classify-info div p{
+    margin-bottom: 0;
+    line-height: 40px
+}
+article .classify-info div:hover{
+    background-color: #b41b1d;
+    transition: all 0.3s ease-in-out 0s
+}
+
+
+article .form{
+    background-color: #fff;
+    padding: 20px 60px 40px 60px;
+}
+article .form p{
+    color: #999
+}
+article .form span{
+    display: inline-block;
+    width: 78px;
+    height: 1px;
+    background-color: #b4b4b4;
+    margin-left: 20px;
+}
+article .form div{
+    text-align: center;
+    margin-top: 40px;
+}
+article .form div>p{
+    margin: 20px 0 30px 0
+}
+article .form input{
+    height: 46px;
+    outline: none;
+}
+article .form input:nth-child(3),article .form input:nth-child(4){
+    width: 240px;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+article .form input:nth-child(5){
+    width: 460px;
+    padding-left: 20px;
+}
+article .form button{
+    width: 160px;
+    height: 46px;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    background-color: #b41b1d;
+}
+article .form>div>div p{
+    font-size: 14px;
+    color: #333;
+}
+
+
+article .findmore{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 140px;
+}
+article .findmore h5{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+article .findmore ul{
+    width: 100%;
+    padding: 0;
+    display: flex;
+}
+article .findmore li{
+    width: 33.3%;
+}
+article .findmore img{
+    width: 100%;
+    height: auto;
+}
+
+
+article .link{
+    width: 100%;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 80px;
+}
+article .link p{
+    font-size: 18px;
+    margin: 0;
+    border-right: 1px solid #999;
+    padding:10px 10px 10px 0;
+}
+article .link ul{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0
+}
+article .link li{
+    font-size: 16px;
+    margin-right: 20px;
+    line-height: 30px;
+    color: #6e6e6e
+}
+article .link a{
+    text-decoration: none;
+    color: #6e6e6e
+}

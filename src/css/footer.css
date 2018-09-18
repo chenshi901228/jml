@@ -1,0 +1,86 @@
+footer{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+footer>div:first-child{
+    
+    background-color: #fff
+}
+footer>div:last-child{
+    
+    background-color: #262626
+}
+footer .companyInfo{
+    width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0
+}
+footer .companyInfo>div:first-child p:first-child{
+    color: #000
+}
+footer .companyInfo>div:first-child p{
+    font-size: 24px;
+    color: #c5c5c5
+}
+footer .companyInfo>div:nth-child(2) p{
+    font-size: 14px;
+    color: #6e6e6e
+}
+footer h4{
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    color: #000
+}
+footer .companyInfo>div:nth-child(3) div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 36px;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 10px;
+}
+footer .companyInfo>div:nth-child(3) p{
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+footer .companyInfo>img{
+    width: 34%;
+    height: auto;
+}
+footer .companyexct{
+    width: 1500px;
+    margin: 0 auto;
+    color: #818181;
+    padding: 0;
+}
+footer .companyexct>div:first-child{
+    width: 100%;
+    border-bottom: 1px solid #494949;
+    text-align: right;
+    padding: 50px 0;
+}
+footer .companyexct>div:first-child p{
+    color: #3399cc;
+    cursor: pointer;
+}
+footer .companyexct>div:last-child{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 60px 0
+}
+footer .companyexct>div:last-child div{
+    display: flex;
+}
+footer .companyexct ul{
+    display: flex;
+    padding-left: 0
+}
+footer .companyexct li{
+    margin-left: 6px;
+    cursor: pointer;
+}

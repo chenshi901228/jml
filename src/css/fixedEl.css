@@ -1,0 +1,41 @@
+.fixedEl{
+    width: 50px;
+    height: 200px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 6;
+    transition: .4s;
+}
+.fixedEl ul{
+    width: 100%;
+    height: 100%;
+    padding-left: 0
+}
+.fixedEl img{
+    width: 30px;
+    height: 30px;
+}
+.fixedEl li{
+    width: 100%;
+    height: 25%;
+    background-color: #191919;
+}
+.fixedEl a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    padding: 0 10px;
+    text-decoration: none;
+}
+.fixedEl li:not(:last-child){
+    border-bottom: 1px solid #3b3b3b
+}
+.fixedEl p{
+    display: none;
+    margin-bottom: 0;
+    color: #fff
+}
