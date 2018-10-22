@@ -582,6 +582,9 @@ article .dynamic li{
 article .dynamic li:hover{
     cursor: pointer;
 }
+article .dynamic li:hover h5{
+    color: #b41b1d;
+}
 article .dynamic li>img{
     width: 100%;
     height: auto;

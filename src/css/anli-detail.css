@@ -116,9 +116,11 @@ article .show{
     padding: 30px;
     margin-top: 20px;
     background-color: #fff;
+    text-align: center;
 }
 article .show img{
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: auto;
 }
 
@@ -147,8 +149,8 @@ article .bottom div:last-child{
     margin-right: 150px;
 }
 article .bottom div:last-child a{
-    text-decoration: none;
-    color: #000;
+    /* text-decoration: none; */
+    /* color: #000; */
     font-size: 16px;
 }
 
@@ -319,9 +321,10 @@ article .dynamic-list ul{
 article .dynamic-list li{
     width: 48%;
     height: 124px;
+    padding: 0 20px;
     border-top: 1px solid #d8d8d8;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 article .dynamic-list li>div p{

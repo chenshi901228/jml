@@ -44,7 +44,8 @@ article .top{
 article .top .introduce{
     width: 68%;
     padding: 52px 70px 50px 52px;
-    background-color: #fff
+    background-color: #fff;
+    overflow: hidden;
 }
 article .top .introduce p:nth-child(2){
     color: #6e6e6e;
@@ -65,15 +66,15 @@ article .top .introduce span{
     line-height: 40px;
 }
 article .top .introduce img{
-    width: 100%;
-    margin: 40px 0;
+    display: block;
+    width: auto;
+    margin: 40px auto;
 }
 article .top .introduce div{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;   
 }
-
 
 article .top .experience{
     width: 30%;
@@ -104,13 +105,18 @@ article .top .experience ul li p:last-child{
     color: #999;
     margin-top: 20px;
 }
+article .top .experience ul li:hover{
+    cursor: pointer;
+}
 article .top .experience ul li:hover p:first-child{
     color: #b41b1d;
-    cursor: pointer;
 }
 article .top .experience img{
     width: 100%;
     margin-top: 20px;
+}
+article .top .experience img:hover{
+    cursor: pointer;
 }
 
 

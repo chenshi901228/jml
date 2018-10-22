@@ -561,9 +561,10 @@ article .dynamic-list ul{
 article .dynamic-list li{
     width: 48%;
     height: 124px;
+    padding: 0 20px;
     border-top: 1px solid #d8d8d8;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 article .dynamic-list li>div p{

@@ -26,6 +26,7 @@
   
   li{
     list-style: none;
+    outline: none;
   }
   /**
    * Correct the font size and margin on `h1` elements within `section` and

@@ -70,6 +70,9 @@ article .appDevelop .pro-normal p{
     font-size: 18px;
     font-weight: normal
 }
+article .appDevelop .big{
+    width: 49.6%;
+}
 article .appDevelop .pro-normal div{
     width: 100%;
     height: 350px;
@@ -81,28 +84,7 @@ article .appDevelop .pro-normal>p:last-child{
     font-size: 14px;
     color: #999
 }
-article .appDevelop .pro-wid p{
-    font-size: 18px;
-    font-weight: normal
-}
-article .appDevelop .pro-wid>p:last-child{
-    font-size: 14px;
-    color: #999
-}
-article .appDevelop .pro-wid{
-    width: 49.6%;
-    /* height: 440px; */
-    border-bottom: 1px solid #d8d8d8;
-    margin-bottom: 20px;
-}
-article .appDevelop .pro-wid div{
-    width: 100%;
-    height: 350px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-}
-article .appDevelop .pro-wid div b,article .appDevelop .pro-normal div b{
+article .appDevelop .pro-normal div b{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -117,22 +99,22 @@ article .appDevelop .pro-wid div b,article .appDevelop .pro-normal div b{
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
-article .appDevelop .pro-wid b p,article .appDevelop .pro-normal b p{
+article .appDevelop .pro-normal b p{
     font-size: 16px;
 }
-article .appDevelop .pro-wid div:hover,article .appDevelop .pro-normal div:hover{
+article .appDevelop .pro-normal:hover{
     cursor: pointer;;
 }
-article .appDevelop .pro-wid div:hover b,article .appDevelop .pro-normal div:hover b{
+article .appDevelop .pro-normal div:hover b{
     opacity: 1;
 }
-article .appDevelop .pro-wid div:hover img,article .appDevelop .pro-normal div:hover img{
+article .appDevelop .pro-normal div:hover img{
     transform: scale(1.2)
 }
-article .appDevelop .pro-wid div:hover p::before,article .appDevelop .pro-normal div:hover p::after{
+article .appDevelop .pro-normal div:hover p::after{
     transform: scaleX(0.1)
 }
-article .appDevelop .pro-wid div:hover p::after,article .appDevelop .pro-normal div:hover p::before{
+article .appDevelop .pro-normal div:hover p::before{
     transform: scaleX(0.1)
 }
 article .appDevelop b p::before{
@@ -160,6 +142,7 @@ article .appDevelop>div img{
 article .appDevelop>div{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 

@@ -300,62 +300,7 @@ article .team-show .swiper-slide:hover .name-info{
 }
 
 
-article .classify-title{
-    width: 100%;
-    height: 160px;
-    padding: 50px 70px;
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-article .classify-title-h1{
-    font-size: 34px;
-    margin-bottom: 0;
-    border-right: 1px solid #666;
-    padding-right: 30px;
-}
-article .classify-title-h1 span{
-    display: block;
-    font-size: 14px;
-    color: #e0e0e0
-}
-article .classify-title>div:last-child{
-    color: #e0e0e0;
-    cursor: pointer;
-}
-article .classify-title>div:last-child a{
-    text-decoration: none;
-    color: #e0e0e0
-}
-article .classify-title>div:last-child img{
-    width: 30px;
-    height: 30px;
-    margin-left: 20px;
-}
-article .classify-title .classify-info{
-    margin-right:32%
-}
-article .classify-info ul{
-    width: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0
-}
-article .classify-info li{
-    border: 1px solid #b6b6b6;
-    color: #b6b6b6;
-    padding: 2px 6px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    transition: all .4s;
-}
-article .classify-info li:hover{
-    cursor: pointer;
-    background-color: #fff;
-    color: #000;
-}
+
 
 
 article>a{
@@ -398,28 +343,7 @@ article .appDevelop .pro-normal>p:last-child{
     font-size: 14px;
     color: #999
 }
-article .appDevelop .pro-wid p{
-    font-size: 18px;
-    font-weight: normal
-}
-article .appDevelop .pro-wid>p:last-child{
-    font-size: 14px;
-    color: #999
-}
-article .appDevelop .pro-wid{
-    width: 49.6%;
-    /* height: 440px; */
-    border-bottom: 1px solid #d8d8d8;
-    margin-bottom: 20px;
-}
-article .appDevelop .pro-wid div{
-    width: 100%;
-    height: 350px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-}
-article .appDevelop .pro-wid div b,article .appDevelop .pro-normal div b{
+article .appDevelop .pro-normal div b{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -434,25 +358,25 @@ article .appDevelop .pro-wid div b,article .appDevelop .pro-normal div b{
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
-article .appDevelop .pro-wid b p,article .appDevelop .pro-normal b p{
+article .appDevelop .pro-normal b p{
     font-size: 16px;
 }
-article .appDevelop .pro-wid div:hover,article .appDevelop .pro-normal div:hover{
+article .appDevelop .pro-normal div:hover{
     cursor: pointer;;
 }
-article .appDevelop .pro-wid:hover>p:nth-child(2),article .appDevelop .pro-normal:hover>p:nth-child(2){
+article .appDevelop .pro-normal:hover>p:nth-child(2){
     color: #b41b1d;
 }
-article .appDevelop .pro-wid:hover b,article .appDevelop .pro-normal:hover b{
+article .appDevelop .pro-normal:hover b{
     opacity: 1;
 }
-article .appDevelop .pro-wid:hover img,article .appDevelop .pro-normal:hover img{
+article .appDevelop .pro-normal:hover img{
     transform: scale(1.2);
 }
-article .appDevelop .pro-wid:hover p::before,article .appDevelop .pro-normal:hover p::after{
+article .appDevelop .pro-normal:hover p::after{
     transform: scaleX(0.1)
 }
-article .appDevelop .pro-wid:hover p::after,article .appDevelop .pro-normal:hover p::before{
+article .appDevelop .pro-normal:hover p::before{
     transform: scaleX(0.1)
 }
 article .appDevelop b p::before{
@@ -538,6 +462,7 @@ article .cooper{
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
+    background-color: #fff;
 }
 
 
@@ -610,7 +535,7 @@ article .link{
     display: flex;
     align-items: center;
     background-color: #fff;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
 }
 article .link p{
     font-size: 18px;

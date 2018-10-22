@@ -2,7 +2,7 @@
     width: 50px;
     height: 200px;
     position: fixed;
-    right: 0;
+    right: 16px;
     top: 50%;
     z-index: 6;
     transition: .4s;
@@ -38,4 +38,13 @@
     display: none;
     margin-bottom: 0;
     color: #fff
+}
+.dynamic-pagination a{
+    text-decoration: none
+}
+.dynamic-pagination ul li:first-child{
+    background-color: #b41b1d
+}
+.dynamic-pagination ul li:first-child a{
+    color: #fff;
 }

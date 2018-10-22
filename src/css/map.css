@@ -1,0 +1,94 @@
+
+
+
+a:hover{
+    text-decoration: none;
+}
+area{
+    outline: none
+}
+body{
+    background-color: rgb(243, 243, 243);
+}
+article{
+    width: 1500px;
+    margin: 0 auto;
+    /* height: 2000px; */
+    padding: 0;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    background-color: rgb(243, 243, 243);
+}
+article>div{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+article h4 a:hover{
+    text-decoration: none;
+    color: #6a6a6a;
+}
+article h4 a{
+    text-decoration: none;
+    color: #6a6a6a;
+}
+article h4{
+    color: #6a6a6a;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+article>p:nth-child(2){
+    font-size: 40px;
+    color: #f11320
+}
+article>p:nth-child(3){
+    font-size: 26px;
+    color: #5e5e5e
+}
+
+
+
+article .map{
+    text-align: center;
+    background-color: #fff;
+}
+
+
+article .link{
+    width: 100%;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+article .link p{
+    font-size: 18px;
+    margin: 0;
+    border-right: 1px solid #999;
+    padding:10px 10px 10px 0;
+}
+article .link ul{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0
+}
+article .link li{
+    font-size: 16px;
+    margin-right: 20px;
+    line-height: 30px;
+    color: #6e6e6e
+}
+article .link a{
+    text-decoration: none;
+    color: #6e6e6e
+}

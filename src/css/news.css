@@ -101,6 +101,9 @@ article .dynamic-list li>div:first-child img{
 article .dynamic-list li:hover{
     cursor: pointer;
 }
+article .dynamic-list li:hover .time-title p{
+    color: #cc0000
+}
 article .dynamic-list li:hover>div:first-child img{
     transform: scale(1.1)
 }
