@@ -1,8 +1,8 @@
-
 const device = navigator.userAgent
 if (!/Windows/.test(device)) {
-	window.location.href = "../webApp/index.html"
+	window.location.href = "./webApp/webindex.html"
 }
+
 
 const dataInfo = {
     index_banner_img: [
