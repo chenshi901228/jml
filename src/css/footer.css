@@ -4,11 +4,11 @@ footer{
     z-index: 3;
 }
 footer>div:first-child{
-    
+    min-width: 1500px;
     background-color: #fff
 }
 footer>div:last-child{
-    
+    min-width: 1500px;
     background-color: #262626
 }
 footer .companyInfo{

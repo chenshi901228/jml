@@ -9,7 +9,7 @@ article{
     padding-bottom: 50px;
     background-color: rgb(243, 243, 243)  ;
     position: relative;
-    top: 50px;
+    top: 70px;
     z-index: 3;
 }
 .swiper-container {
@@ -24,14 +24,21 @@ article{
 
 
 .top-show{
+    width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    z-index: 4;
     background-color: #fff;
-    padding: 60px 50px 0 50px;
+    padding: 0 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px #aaa;
 }
 .top-show .cooperation{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #d8d8d8
+    /* border-bottom: 1px solid #d8d8d8 */
 }
 .top-show .cooperation p{
     display: block;
@@ -46,14 +53,15 @@ article{
     margin-bottom: 0;
     width: 85%;
     padding-left: 0;
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .my-bullet{
     width: 10%;
-    height: 130px;
-    padding-bottom: 50px;
+    height: 100px;
+    padding-bottom: 30px;
     border-bottom: 4px solid #fff;
 }
 .top-show .cooperation li:hover{

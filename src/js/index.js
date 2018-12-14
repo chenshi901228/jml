@@ -12,7 +12,7 @@ function init(el) {
                             <p>查看详情</p>
                         </b>
                     </div>
-                    <p>${item.pro_title.length > 18 ? item.pro_title.slice(0,18) + "..." : item.pro_title}</p>
+                    <p>${item.pro_title.length > 18 ? item.pro_title.slice(0, 18) + "..." : item.pro_title}</p>
                     <p>${item.pro_sort[2]}</p>
                 </div>
             `
@@ -29,9 +29,9 @@ $(function () {
     init("marketInfo")
 
     $(".dynamic-detail").html(`
-        <h2>${dataInfo.dynamicInfo[0].news_date.slice(5,10)}</h2>
-        <h4>${dataInfo.dynamicInfo[0].news_title.length>18?dataInfo.dynamicInfo[0].news_title.slice(0,18)+"...":dataInfo.dynamicInfo[0].news_title}</h4>
-        <p>${dataInfo.dynamicInfo[0].news_info_top.length>30?dataInfo.dynamicInfo[0].news_info_top.slice(0,30)+"...":dataInfo.dynamicInfo[0].news_info_top}</p>
+        <h2>${dataInfo.dynamicInfo[0].news_date.slice(5, 10)}</h2>
+        <h4>${dataInfo.dynamicInfo[0].news_title.length > 18 ? dataInfo.dynamicInfo[0].news_title.slice(0, 18) + "..." : dataInfo.dynamicInfo[0].news_title}</h4>
+        <p>${dataInfo.dynamicInfo[0].news_info_top.length > 30 ? dataInfo.dynamicInfo[0].news_info_top.slice(0, 30) + "..." : dataInfo.dynamicInfo[0].news_info_top}</p>
         <img src="${dataInfo.dynamicInfo[0].news_img}" alt="">
         <div>
             <a data-index=${dataInfo.dynamicInfo[0].id} data-ify="dynamicInfo" href="javascript:void(0);">查看详情</a>
@@ -40,19 +40,21 @@ $(function () {
 
     $(".dynamic-list ul").html(`
         ${
-            dataInfo.dynamicInfo.slice(0,8).map(item=>{
-                return `
+        dataInfo.dynamicInfo.slice(0, 8).map(item => {
+            return `
                     <li data-index=${item.id} data-ify="dynamicInfo">
                         <div>
-                            <h4>${item.news_title.length>18?item.news_title.slice(0,18)+"...":item.news_title}</h4>
-                            <p>${item.news_info_top.length>18?item.news_info_top.slice(0,18)+"...":item.news_info_top}</p>
+                            <h4>${item.news_title.length > 18 ? item.news_title.slice(0, 18) + "..." : item.news_title}</h4>
+                            <p>${item.news_info_top.length > 18 ? item.news_info_top.slice(0, 18) + "..." : item.news_info_top}</p>
                         </div>
-                        <p>${item.news_date.slice(5,10)}</p>
+                        <p>${item.news_date.slice(5, 10)}</p>
                     </li>
                 `
-            }).join("")
+        }).join("")
         }
     `)
+
+
 })
 
 
@@ -109,7 +111,7 @@ $(".dynamic-list").on("click", "li", function () {
 $(".appDevelop").on("click", ".pro-normal", function () {
     const i = $(this).attr("data-index")
     const t = $(this).attr("data-ify")
-    setWebStorage("anli-detail",JSON.stringify(dataInfo[t].content[i]))
+    setWebStorage("anli-detail", JSON.stringify(dataInfo[t].content[i]))
     location.href = "./anli-detail.html"
 })
 $(".maskInfo div").click(() => {

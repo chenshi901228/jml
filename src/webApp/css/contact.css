@@ -1,0 +1,60 @@
+
+.app_banner{
+    width: 100%;
+    height: 25rem;
+    margin-top: 5rem;
+    background: url('../../images/marketing/banner_03.jpg') no-repeat;
+    background-size: cover
+}
+.app_banner h6,.app_banner h2{
+    position: absolute;
+    left: -100%;
+    transition: all 1s
+}
+.app_banner h6{
+    top:7rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #fff;
+}
+.app_banner .anima_p{
+    left: 3rem
+}
+.app_banner h2{
+    font-size: 2rem;
+    color: #fff;
+    top: 12rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    letter-spacing: 0.1rem
+}
+
+
+.submit{
+    text-align: center;
+    margin: 2rem 0
+}
+.submit>h2{
+    font-size: 2rem;
+    color: rgba(48,48,48,1);
+    font-weight: normal;
+    margin-bottom: 2rem
+}
+.submit>p{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: rgba(110,110,110,1)
+}
+.submit>p a{
+    text-decoration: none;
+    color: #00B4F8
+}
+
+
+.map{
+    font-size: 0
+}
+.map img{
+    width: 100%;
+    /* height: 15rem; */
+}

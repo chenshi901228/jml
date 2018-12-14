@@ -22,6 +22,7 @@ article>div{
 
 .banner{
     width: 100%;
+    min-width: 1500px;
     height: auto;
     margin-top: 100px;
 }

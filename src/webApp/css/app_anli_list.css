@@ -1,0 +1,113 @@
+
+
+.app_banner{
+    width: 100%;
+    height: 25rem;
+    margin-top: 5rem;
+    background: url('../../images/banner/three.jpg') no-repeat;
+    background-size: cover
+}
+.app_banner h6,.app_banner h2{
+    position: absolute;
+    left: -100%;
+    transition: all 1s
+}
+.app_banner h6{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+.app_banner .anima_p{
+    left: 3rem
+}
+.app_banner h2{
+    font-size: 2rem;
+    top: 10rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    letter-spacing: 0.1rem
+}
+
+
+.content{
+    width: 100%;
+    padding: 0 1rem
+}
+.content .title{
+    font-size: 1.2rem;
+    padding: 1.6rem 0 2.2rem;
+    color: #6E6E6E
+}
+.content ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0
+}
+.content li{
+    width: 50%;
+    margin-bottom: 2rem
+    /* height: 10rem; */
+}
+.content li h6,.content li p{
+    margin: 0
+}
+.content li h6{
+    font-size: 1.3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content li p{
+    font-size: 1.2rem;
+    color: rgb(110, 110, 110);
+    margin-top: 0.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content li img{
+    width: 100%;
+    height: 16rem;
+}
+.content .load_more{
+    text-align: center;
+    margin: 1rem 0 2rem
+}
+.content .load_more img{
+    width: 1.6rem
+}
+.content .load_more p{
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+    color: #C9C9C9;
+}
+
+
+.getprice{
+    width: 100%;
+    /* height: 5rem; */
+    background-color: #B41B1D;
+    padding: 1.6rem 0 1.2rem;
+    text-align: center
+}
+.getprice .animap{
+    transform: scale(1)
+}
+.getprice p{
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 0 0 1rem;
+    transform: scale(0.2);
+    transition: all .8s
+}
+.getprice a{
+    display: inline-block;
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border: 0.1rem solid #fff;
+    padding: 0.4rem 0.8rem;
+    transform: scale(0.2);
+    transition: all .8s
+}
+

@@ -61,13 +61,17 @@ article .appDevelop{
     margin-top: 20px;
 }
 article .appDevelop .pro-normal{
-    width: 24.6%;
+    width: 24.25%;
     /* height: 440px; */
     border-bottom: 1px solid #d8d8d8;
     margin-bottom: 20px;
 }
+article .appDevelop .pro-normal:not(:nth-child(4)){
+    margin-right: 1%;
+}
 article .appDevelop .big{
-    width: 49.6%;
+    width: 49.5%;
+    margin-right: 0!important;
 }
 article .appDevelop .pro-normal p{
     font-size: 18px;
@@ -148,7 +152,7 @@ article .appDevelop>div{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 

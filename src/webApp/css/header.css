@@ -1,0 +1,167 @@
+
+body{
+    padding-bottom: 4rem;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.fixbottom{
+    width: 100%;
+    height: 4rem;
+    background-color: #B41B1D;
+    position: fixed;
+    z-index: 23;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.fixbottom div{
+    width: 50%;
+    text-align: center
+}
+.fixbottom div:first-child{
+    border-right: 0.1rem solid rgba(255,255,255,0.2)
+}
+.fixbottom img{
+    width: 1rem;
+    vertical-align: middle;
+    margin-right: 0.4rem
+}
+.fixbottom a{
+    display: block;
+    line-height: 2rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem
+}
+.gotop{
+    display: none;
+    width: 4rem;
+    position: fixed;
+    z-index: 20;
+    bottom: 16%;
+    right: 10%;
+}
+header{
+    width: 100%;
+    height: 5rem;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 0 1rem; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 16;
+}
+header .logo{
+    width: 9rem;
+    vertical-align: middle
+}
+header .menu{
+    display: flex;
+    align-items: center
+}
+header .menu img{
+    width: 1.8rem;
+    margin-left: 1rem;
+}
+header p{
+    font-size: 1.4rem;
+    color: #fff
+}
+
+
+/* 二级菜单 */
+
+.second-menu{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27,27,27,1);
+    transition: all .6s;
+    overflow: auto;
+}
+.second-menu .header{
+    height: 5rem;
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+.second-menu .header img{
+    width: 2rem;
+    margin-right: 1rem
+}
+.second-menu .logo{
+    width: 10rem
+}
+.selectoption{
+    padding: 1rem
+}
+.selectoption ul{
+    padding-left: 0
+}
+.selectoption li{
+    border-bottom: 0.1rem solid #303030
+}
+.selectoption ul a{
+    display: block;
+    line-height: 6rem;
+    font-size: 1.6rem;
+    color: #fff;
+    text-decoration: none
+}
+.selectoption .bottom img{
+    vertical-align: middle;
+    width: 1.2rem
+}
+.selectoption .bottom p{
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.4)
+}
+.selectoption .bottom a{
+    font-size: 2rem;
+    color: #B41B1D;
+    text-decoration: none
+}
+
+
+/* 联系我们 */
+.contact{
+    width: 100%;
+    /* height: 20rem; */
+    background-color: #303030
+}
+.contact h2{
+    font-size: 2rem
+}
+.contact h1{
+    font-size: 3rem
+}
+.contact .con-top{
+    padding: 2rem 1rem;
+    color: rgba(255,255,255,0.8)
+}
+.contact .con-top a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    margin-right: 0.6rem
+}
+.contact .con-bottom{
+    height: 4rem;
+    padding-left: 1rem;
+    background-color: #1F2020;
+    color:rgba(190,190,190,0.5);
+    font-size: 1.2rem;
+    line-height: 4rem
+}

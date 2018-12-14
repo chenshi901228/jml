@@ -1,4 +1,8 @@
 
+
+.swiper-container{
+    min-width: 1500px;
+}
 header{
     width: 100%;
     transition: all .6s;
@@ -91,7 +95,6 @@ header .right-box .icon-phone{
     align-items: center;
     justify-content: center;
 }
-
 header li:hover{
     cursor: pointer;
     border-bottom: 4px solid #FF6347
