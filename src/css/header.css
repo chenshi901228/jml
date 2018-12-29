@@ -17,7 +17,7 @@ header a{
     display: block;
     width: 100%;
     height: 100%;
-    color: #000;
+    color: #000;  
 }
 header a:hover,header a:visited,header a:link,header a:active{
     text-decoration: none;
@@ -74,6 +74,21 @@ header .right-box .icon-phone{
     width: 80px;
     line-height: 100px;
     text-align: center;
+    position: relative;
+}
+header li::after{
+    content:'';
+    width: 100%;
+    height: 4px;
+    background-color: #FF6347;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: all .4s;
+}
+header li:hover::after{
+    transform: scaleX(1);
 }
 .right-box-nav li p{
     color: grey;
@@ -90,17 +105,24 @@ header .right-box .icon-phone{
 .right-box-nav li{
     height: 100px;
     width: 100px;
-    border-bottom: 5px solid transparent;
+    /* border-bottom: 5px solid transparent; */
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 header li:hover{
     cursor: pointer;
-    border-bottom: 4px solid #FF6347
+    /* border-bottom: 4px solid #FF6347 */
 }
-.actived{
-    border-bottom: 4px solid #FF6347
+.actived::before{
+    content:'';
+    width: 100%;
+    height: 4px;
+    background-color: #FF6347;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .swiper-pagination-bullet{

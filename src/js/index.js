@@ -72,7 +72,7 @@ var mySwiper = new Swiper('.swiper-container', {
         bulletActiveClass: 'my-bullet-active',
         clickable: true,
         renderBullet: function (index, className) {
-            return '<li class="' + className + '"><img data-index=' + index + ' src="./images/brand_' + (index + 1) + '.jpg"></li>';
+            return `<li data-index="${index}" class="${className}"><b>${dataInfo.bannerShow[index]}<br/>解决方案</b></li>`;
         },
     },
 })
@@ -92,7 +92,7 @@ var mySwiper3 = new Swiper('.swiper-container3', {
         prevEl: '.pre-button',
     },
 })
-$(".top-show img")
+$(".top-show li")
     .mouseenter(function () {
         mySwiper.slideTo($(this).attr("data-index"), 1000, false)
     })

@@ -194,11 +194,18 @@ article .web-superiority a::before{
     padding-bottom: 30px;
     border-bottom: 4px solid #fff;
 }
+.my-bullet b{
+    font-size: 24px;
+    color: #555;
+}
 .top-show .cooperation li:hover{
     cursor: pointer;
 }
 .my-bullet-active{
     border-bottom: 4px solid #FF6347;
+}
+.my-bullet-active b{
+    color: #FF6347;
 }
 
 

@@ -1,6 +1,6 @@
 const device = navigator.userAgent
 if (!/Windows/.test(device)) {
-	window.location.href = "./webApp/webindex.html"
+    window.location.href = "./webApp/webindex.html"
 }
 
 
@@ -10,6 +10,8 @@ const dataInfo = {
         "./images/banner/two.jpg",
         "./images/banner/three.jpg"
     ],
+    bannerShow:['APP开发','网站建设','品牌设计','整合营销','游戏开发','其他'],
+    qq: 786154530,
     partLink: [],
     appInfo: {
         bannerImg: [],
@@ -155,7 +157,7 @@ const dataInfo = {
                 pro_introduce: `舒仁房地产专注于一手楼盘销售委托管理服务。力求打造一支有着绝对专业知识和素养的强大团队。`,
                 pro_anli_imgs: ["./images/website/website-anli_7.jpg"],
                 pro_link: "./images/5fa06d4f5dd83f666637668da5b5d08c.gif"
-            }, 
+            },
             // {
             //     id: 7,
             //     pro_top_img: "./images/website/web_banner.jpg",
@@ -473,6 +475,22 @@ const dataInfo = {
         }
     ],
 }
+
+
+// qq
+$(function () {
+    $(".fixedEl .qqNum").html(`
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=${dataInfo.qq}&site=qq&menu=yes" target="_blank">
+            <img src="./images/icon/qq_1.png" alt="">
+        </a>
+        <div class="show-message">
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=${dataInfo.qq}&site=qq&menu=yes" target="_blank">
+                咨询在线客服<br/>
+                QQ:${dataInfo.qq}
+            </a>
+        </div>
+    `)
+})
 
 // 本地缓存
 
