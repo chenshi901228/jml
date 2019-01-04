@@ -14,12 +14,14 @@ html,body{
     right: 0;
 }
 .navbar .container{
-    min-width: 1500px;
+    width: 100%;
+    padding: 0 12%;
 }
 .navbar .navbar-brand{
     padding: 0;
     padding-right: 20px;
     border-right: 1px solid #c5c5c5;
+    margin-bottom: 24px;
 }
 .navbar .navbar-header{
     padding: 26px 0 0;
@@ -43,6 +45,21 @@ html,body{
     font-weight: 700;
     color: #000;
     padding-bottom: 38px
+}
+@media screen and (max-width:1620px){
+    .navbar .container .navbar-right{
+        display: none;
+    }
+}
+@media screen and (max-width:960px){
+    .navbar .container .navbar-nav{
+        display: none;
+    }
+}
+@media screen and (max-width:767px){
+    .navbar .container .navbar-nav{
+        display: block;
+    }
 }
 .navbar .container .navbar-right a{
     font-size: 16px;
