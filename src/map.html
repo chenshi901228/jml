@@ -8,76 +8,55 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/map.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/fixedEl.css">
+    <link rel="stylesheet" href="./css/common/header.css">
+    <link rel="stylesheet" href="./css/map/map.css">
+    <link rel="stylesheet" href="./css/common/footer.css">
+    <link rel="stylesheet" href="./css/common/fixedEl.css">
 </head>
 
 <body>
     <!-- 头部导航 -->
-    <header>
-        <div class="left-box">
-            <img class="header-logo" src="./images/logo.png">
-            <ul class="left-box-nav">
-                <li>
-                    <a href="./index.html">首页</a>
-                </li>
-                <li>
-                    <a href="./appDevelop.html">APP开发</a>
-                </li>
-                <li>
-                    <a href="./website.html">网站建设</a>
-                </li>
-                <li>
-                    <a href="./brand.html">品牌设计</a>
-                </li>
-                <li>
-                    <a href="./marketing.html">整合营销</a>
-                </li>
-                <li>
-                    <a href="./gameDevelop.html">游戏开发</a>
-                </li>
-            </ul>
-        </div>
-        <div class="right-box">
-            <div>
-                <div>
-                    <img class="icon-phone" src="./images/icon/icon-phone.png">
-                    <span>1对1·免费咨询：</span>
-                </div>
-                <span>028-68632175</span>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img alt="Brand" src="./images/logo.png" />
+                </a>
             </div>
-            <ul class="right-box-nav">
-                <li>
-                    <p>一分钟
-                        <br/>
-                        <span>了解聚米粒</span>
-                    </p>
-                    <div class="sec-nav">
-                        <a href="./aboutUs.html">聚米粒简介</a>
-                        <a href="./joinUs.html">加入聚米粒</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./dynamic.html">
-                        <p>精彩观点
-                            <br/>
-                            <span>聚米粒智库</span>
-                        </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./contact.html">
-                        <p>来访聚米粒
-                            <br/>
-                            <span>联系我们</span>
-                        </p>
-                    </a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./appDevelop.html">APP开发</a></li>
+                    <li><a href="./website.html">网站建设</a></li>
+                    <li><a href="./brand.html">品牌设计</a></li>
+                    <li><a href="./marketing.html">整合营销</a></li>
+                    <li><a href="./gameDevelop.html">游戏开发</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nota">
+                        <p class="navbar-text"><img src="./images/icon/icon-phone.png" /><span>1对1·免费咨询：</span><br />028-68632175</p>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false"><span>一分钟</span><br />了解聚米粒 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./aboutUs.html">聚米粒简介</a></li>
+                            <li><a href="./joinUs.html">加入聚米粒</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./dynamic.html"><span>精彩观点</span><br />聚米粒智库</a></li>
+                    <li><a href="./contact.html"><span>来访聚米粒</span><br />联系我们</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
     <article>
         <h4>您的位置：
             <a href="./index.html">首页</a>>网站地图
@@ -86,18 +65,18 @@
         <p>网站地图</p>
         <!-- 地图 -->
         <div class="map">
-           <img src="./images/map/map.jpg" alt="" usemap="#Map">
-           <map name="Map">
-            <area shape="rect" coords="2,154,161,193" href="./appDevelop.html">
-            <area shape="rect" coords="187,153,347,193" href="./website.html">
-            <area shape="rect" coords="373,153,534,193" href="./brand.html">
-            <area shape="rect" coords="559,153,719,192" href="./marketing.html">
-            <area shape="rect" coords="747,153,906,193" href="./gameDevelop.html">
-            <area shape="rect" coords="934,153,1095,192" href="./aboutUs.html">
-            <area shape="rect" coords="1122,153,1282,193" href="./dynamic.html">
-            <area shape="rect" coords="1309,154,1468,192" href="./contact.html">
-            <area shape="rect" coords="671,30,799,66" href="./index.html">
-           </map>
+            <img src="./images/map/map.jpg" alt="" usemap="#Map">
+            <map name="Map">
+                <area shape="rect" coords="2,154,161,193" href="./appDevelop.html">
+                <area shape="rect" coords="187,153,347,193" href="./website.html">
+                <area shape="rect" coords="373,153,534,193" href="./brand.html">
+                <area shape="rect" coords="559,153,719,192" href="./marketing.html">
+                <area shape="rect" coords="747,153,906,193" href="./gameDevelop.html">
+                <area shape="rect" coords="934,153,1095,192" href="./aboutUs.html">
+                <area shape="rect" coords="1122,153,1282,193" href="./dynamic.html">
+                <area shape="rect" coords="1309,154,1468,192" href="./contact.html">
+                <area shape="rect" coords="671,30,799,66" href="./index.html">
+            </map>
         </div>
         <!-- 友情链接 -->
         <div class="link">
@@ -187,16 +166,16 @@
                     <img src="./images/icon/phone_1.png" alt="">
                 </a>
                 <div class="show-message">
-                        服务热线：<br />
-                        <a href="tel:028-83188035">
-                            028-68632175
-                        </a>
-                        <a href="tel:13350724957">
-                            13350724957
-                        </a>
-                        <a href="tel:18990676765">
-                            18990676765
-                        </a>
+                    服务热线：<br />
+                    <a href="tel:028-83188035">
+                        028-68632175
+                    </a>
+                    <a href="tel:13350724957">
+                        13350724957
+                    </a>
+                    <a href="tel:18990676765">
+                        18990676765
+                    </a>
                 </div>
             </li>
             <li>
@@ -210,8 +189,9 @@
         </ul>
     </div>
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="./js/store.js"></script>
-    <script src="./js/fixedEl.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./js/common/store.js"></script>
+    <script src="./js/common/fixedEl.js"></script>
 </body>
 
 </html>

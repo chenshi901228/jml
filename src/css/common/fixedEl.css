@@ -43,7 +43,6 @@ html{
     margin-bottom: 0;
     color: #fff
 } */
-
 .fixedEl{
     width: 50px;
     height: 200px;
@@ -131,4 +130,47 @@ html{
 }
 .dynamic-pagination ul li:first-child a{
     color: #fff;
+}
+
+
+
+@keyframes animatethird{
+    0% {bottom:10%}
+    50% {bottom: 15%}
+    100% {bottom:10%}
+}
+
+.thirdParty{
+    position: fixed;
+    left: 20px;
+    bottom: 10%;
+    z-index: 6;
+    animation: animatethird 2s ease-out infinite 
+}
+.thirdParty div{
+    position: relative;
+}
+.thirdParty .t-bgm{
+    width: 200px;
+}
+.thirdParty .t-close{
+    width: 30px;
+    position: absolute;
+    z-index: 7;
+    left: 0;
+    top: 0;
+}
+.thirdParty b{
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: rebeccapurple;
+    transform: translate(-50%,-50%)
+}
+.thirdParty b:hover{
+    cursor: pointer;
+}
+.thirdParty .t-close:hover{
+    cursor: pointer;
 }

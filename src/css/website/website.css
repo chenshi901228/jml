@@ -26,10 +26,10 @@ article{
 /* 头部导航 */
 .fixedPo{
     position: fixed;
-    top: 100px;
+    top: 0;
     margin-top: 0
 }
-nav{
+.nav1{
     width: 100%;
     background-color: #333;
     /* position: fixed; */
@@ -37,7 +37,7 @@ nav{
     margin-top:100px;
     /* transition: all .6s */
 }
-nav div>a{
+.nav1 div>a{
     width: 190px;
     height: 50px;
     color: #fff;
@@ -46,10 +46,10 @@ nav div>a{
     text-align: center;
     line-height: 50px;
 }
-nav div>a:hover{
+.nav1 div>a:hover{
     color: #fff;
 }
-nav div{
+.nav1 div{
     width: 1500px;
     margin: 0 auto;
     height: 50px;
@@ -58,24 +58,24 @@ nav div{
     justify-content: space-between;
     align-items: center;
 }
-nav ul{
+.nav1 ul{
     margin: 0;
     padding: 0;
     display: flex;
 }
-nav li{
+.nav1 li{
     height: 50px;
     line-height: 50px;
     padding: 0 20px;
 }
-nav li:hover{
+.nav1 li:hover{
     background-color: #999;
     transition: all 0.3s ease-in-out 0s;
 }
-nav li a{
+.nav1 li a{
     color: #e0e0e0;
 }
-nav li a:hover{
+.nav1 li a:hover{
     color: #e0e0e0
 }
 
@@ -238,10 +238,39 @@ article .classify-title>div:last-child a{
     text-decoration: none;
     color: #e0e0e0
 }
-article .classify-title>div:last-child img{
+article .classify-title>div:last-child a b{
+    display: inline-block;
     width: 30px;
     height: 30px;
     margin-left: 20px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #fff;
+}
+article .classify-title>div:last-child b img:first-child{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+article .classify-title>div:last-child b img:last-child{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0)
+}
+article .classify-title>div:last-child b:hover img:last-child{
+    transform: scale(1);
+    transition: all .3s;
+}
+article .classify-title>div:last-child b:hover img:first-child{
+    visibility: hidden;
+    transition: all .3s;
+}
+article .classify-title>div:last-child b:hover{
+    background-color: #333
 }
 
 

@@ -32,6 +32,20 @@
 //         }, 500)
 //     })
 
+
+//跳转其他链接 
+$(function () {
+    $(".fixedEl").after(`
+        <div class="thirdParty">
+            <div>
+                <img class="t-close" src="./images/icon/close.png" alt="">
+                <img class="t-bgm" src="./images/icon/third_party.png" alt="">
+                <b>发现更多<br/>应用设计</b>
+            </div>
+        </div>
+    `)
+})
+
 // 固定导航
 $(".fixedEl .Totop")
     .click((e) => {
@@ -41,7 +55,7 @@ $(".fixedEl .Totop")
         }, 500)
     })
 
-    
+
 $(".link ul").html(`
     ${
     dataInfo.partLink.map(item => {
@@ -49,6 +63,13 @@ $(".link ul").html(`
     }).join("")
     }
 `)
+
+$("body").on("click", ".thirdParty .t-close", () => {
+    $(".thirdParty").hide()
+})
+$("body").on("click", ".thirdParty b", () => {
+    location.href = "https://cd.58.com/wangzhan/?key=%E7%BD%91%E7%AB%99%E8%AE%BE%E8%AE%A1&cmcskey=%E7%BD%91%E7%AB%99%E8%AE%BE%E8%AE%A1&final=1&jump=1&specialtype=gls&classpolicy=huangyezonghe_A"
+})
 
 
 

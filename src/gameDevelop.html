@@ -8,77 +8,56 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/gameDevelop.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/fixedEl.css">
+    <link rel="stylesheet" href="./css/common/header.css">
+    <link rel="stylesheet" href="./css/gameDevelop/gameDevelop.css">
+    <link rel="stylesheet" href="./css/common/footer.css">
+    <link rel="stylesheet" href="./css/common/fixedEl.css">
     <link rel="stylesheet" href="./css/swiper-4.3.5.min.css">
 </head>
 
 <body>
     <!-- 头部导航 -->
-    <header>
-        <div class="left-box">
-            <img class="header-logo" src="./images/logo.png">
-            <ul class="left-box-nav">
-                <li>
-                    <a href="./index.html">首页</a>
-                </li>
-                <li>
-                    <a href="./appDevelop.html">APP开发</a>
-                </li>
-                <li>
-                    <a href="./website.html">网站建设</a>
-                </li>
-                <li>
-                    <a href="./brand.html">品牌设计</a>
-                </li>
-                <li>
-                    <a href="./marketing.html">整合营销</a>
-                </li>
-                <li class="actived">
-                    <a href="./gameDevelop.html">游戏开发</a>
-                </li>
-            </ul>
-        </div>
-        <div class="right-box">
-            <div>
-                <div>
-                    <img class="icon-phone" src="./images/icon/icon-phone.png">
-                    <span>1对1·免费咨询：</span>
-                </div>
-                <span>028-68632175</span>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img alt="Brand" src="./images/logo.png" />
+                </a>
             </div>
-            <ul class="right-box-nav">
-                <li>
-                    <p>一分钟
-                        <br/>
-                        <span>了解聚米粒</span>
-                    </p>
-                    <div class="sec-nav">
-                        <a href="./aboutUs.html">聚米粒简介</a>
-                        <a href="./joinUs.html">加入聚米粒</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./dynamic.html">
-                        <p>精彩观点
-                            <br/>
-                            <span>聚米粒智库</span>
-                        </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./contact.html">
-                        <p>来访聚米粒
-                            <br/>
-                            <span>联系我们</span>
-                        </p>
-                    </a>
-                </li>  
-            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./appDevelop.html">APP开发</a></li>
+                    <li><a href="./website.html">网站建设</a></li>
+                    <li><a href="./brand.html">品牌设计</a></li>
+                    <li><a href="./marketing.html">整合营销</a></li>
+                    <li class="active"><a href="./gameDevelop.html">游戏开发</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nota">
+                        <p class="navbar-text"><img src="./images/icon/icon-phone.png" /><span>1对1·免费咨询：</span><br />028-68632175</p>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false"><span>一分钟</span><br />了解聚米粒 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./aboutUs.html">聚米粒简介</a></li>
+                            <li><a href="./joinUs.html">加入聚米粒</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./dynamic.html"><span>精彩观点</span><br />聚米粒智库</a></li>
+                    <li><a href="./contact.html"><span>来访聚米粒</span><br />联系我们</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
     <!-- 头部轮播图 -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -144,25 +123,25 @@
                 <li>
                     <img src="./images/gameDevelop/icon_fons_17.png" alt="">
                     <p>团队一对一
-                        <br/>专人专案策划</p>
+                        <br />专人专案策划</p>
                     <span></span>
                 </li>
                 <li>
                     <img src="./images/gameDevelop/icon_fons_19.png" alt="">
                     <p>一次开发
-                        <br/>PC与手游互通</p>
+                        <br />PC与手游互通</p>
                     <span></span>
                 </li>
                 <li>
                     <img src="./images/gameDevelop/icon_fons_21.png" alt="">
                     <p>严格进度把控
-                        <br/>按时交付成果</p>
+                        <br />按时交付成果</p>
                     <span></span>
                 </li>
                 <li>
                     <img src="./images/gameDevelop/icon_fons_24.png" alt="">
                     <p>按需定制
-                        <br/>节省成本，高性价比</p>
+                        <br />节省成本，高性价比</p>
                     <span></span>
                 </li>
             </ul>
@@ -178,7 +157,7 @@
                     <p>COMMUNICATION</p>
                     <p>项目沟通</p>
                     <p>了解具体需求，对需求进行专业的分析
-                        <br/>分析需求的可能性
+                        <br />分析需求的可能性
                     </p>
                 </li>
                 <li>
@@ -187,7 +166,7 @@
                     <p>PROGRAMME</p>
                     <p>定制方案</p>
                     <p>确定需求，提出开发方案、价格
-                        <br/>明确开发周期
+                        <br />明确开发周期
                     </p>
                 </li>
                 <li>
@@ -196,7 +175,7 @@
                     <p>AGREEMENT</p>
                     <p>签订协议</p>
                     <p>正式立项，签订合同协议
-                        <br/>产品需求、付款金额等
+                        <br />产品需求、付款金额等
                     </p>
                 </li>
                 <li>
@@ -205,7 +184,7 @@
                     <p>DEVELOPMENT</p>
                     <p>项目开发</p>
                     <p>产品原型、产品UI、代码实施
-                        <br/>交付内测游戏版本
+                        <br />交付内测游戏版本
                     </p>
                 </li>
             </ul>
@@ -219,7 +198,7 @@
                     <p>MAINTAIN</p>
                     <p>质保维护</p>
                     <p>7*12小时重大问题及时响应
-                        <br/>提供1年质保期售后服务
+                        <br />提供1年质保期售后服务
                     </p>
                 </li>
                 <li>
@@ -228,7 +207,7 @@
                     <p>TRAINING</p>
                     <p>后台培训</p>
                     <p>提供专业的项目后台培训，包括
-                        <br/>运营维护和产品使用等
+                        <br />运营维护和产品使用等
                     </p>
                 </li>
                 <li>
@@ -237,7 +216,7 @@
                     <p>ACCEPTANCE</p>
                     <p>完成验收</p>
                     <p>完整版本出炉，具备上线条件
-                        <br/>客户进行最终验收
+                        <br />客户进行最终验收
                     </p>
                 </li>
                 <li>
@@ -246,7 +225,7 @@
                     <p>BETA TESTING</p>
                     <p>产品测试</p>
                     <p>甲方对内测版本进行验收
-                        <br/>并对问题提出修改
+                        <br />并对问题提出修改
                     </p>
                 </li>
             </ol>
@@ -263,11 +242,11 @@
                 </a>
                 <div class="classify-info">
                     <h2>不仅是一款游戏
-                        <br/>更是一个追梦团队的支持</h2>
+                        <br />更是一个追梦团队的支持</h2>
                     <p>区别一般的外包开发公司
-                        <br/> 聚米粒拒绝出品交作业式的游戏
-                        <br/>每款游戏均以大型手游标准制作
-                        <br/>坚持以运营思维打造产品，确保游戏品质</p>
+                        <br /> 聚米粒拒绝出品交作业式的游戏
+                        <br />每款游戏均以大型手游标准制作
+                        <br />坚持以运营思维打造产品，确保游戏品质</p>
                 </div>
             </div>
             <div class="game-why-main1">
@@ -297,7 +276,10 @@
             <div>
                 <a href="./gameDevelop-anli.html">
                     <span>浏览更多案例</span>
-                    <img src="./images/icon/fill.png" alt="">
+                    <b>
+                        <img src="./images/icon/fill_1.png" alt="">
+                        <img src="./images/icon/fill.png" alt="">
+                    </b>
                 </a>
             </div>
         </div>
@@ -324,20 +306,17 @@
             <ul>
                 <li>
                     <a href="./brand.html">
-                        <img src="./images/APPtansuo_03.gif"
-                            alt="">
+                        <img src="./images/APPtansuo_03.gif" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="./marketing.html">
-                        <img src="./images/APPtansuo_05.gif"
-                            alt="">
+                        <img src="./images/APPtansuo_05.gif" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="./appDevelop.html">
-                        <img src="./images/APPtansuo_07.gif"
-                            alt="">
+                        <img src="./images/APPtansuo_07.gif" alt="">
                     </a>
                 </li>
             </ul>
@@ -431,16 +410,16 @@
                     <img src="./images/icon/phone_1.png" alt="">
                 </a>
                 <div class="show-message">
-                        服务热线：<br />
-                        <a href="tel:028-83188035">
-                            028-68632175
-                        </a>
-                        <a href="tel:13350724957">
-                            13350724957
-                        </a>
-                        <a href="tel:18990676765">
-                            18990676765
-                        </a>
+                    服务热线：<br />
+                    <a href="tel:028-83188035">
+                        028-68632175
+                    </a>
+                    <a href="tel:13350724957">
+                        13350724957
+                    </a>
+                    <a href="tel:18990676765">
+                        18990676765
+                    </a>
                 </div>
             </li>
             <li>
@@ -454,84 +433,11 @@
         </ul>
     </div>
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="./js/swiper-4.3.5.min.js"></script>
-    <script src="./js/store.js"></script>
-    <script src="./js/fixedEl.js"></script>
-    <script>        
-        $(function(){
-            $(".classify-title").after(`
-                ${
-                    dataInfo.gameDevelopInfo.content.slice(0,3).map(item=>{
-                        if(item.id%2!=0){
-                            return `
-                                <div class="classify">
-                                    <div class="classify-info">
-                                        <p>${item.pro_date}</p>
-                                        <h3>${item.pro_title}</h3>
-                                        <p>${item.pro_sort[2]}</p>
-                                        <p>-</p>
-                                        <p>${item.pro_introduce.length>40?item.pro_introduce.slice(0,40)+"...":item.pro_introduce}</p>
-                                        <div>
-                                            <p>下载浏览</p>
-                                        </div>
-                                    </div>
-                                    <div class="classify-pic" data-index=${item.id} data-ify="gameDevelopInfo">
-                                        <img src="${item.pro_anli_imgs[0]}" alt="">
-                                        <b>
-                                            <p>查看详情</p>
-                                        </b>
-                                    </div>
-                                </div>
-                            `
-                        }else{
-                            return `
-                                <div class="classify">
-                                    <div class="classify-pic" data-index=${item.id} data-ify="gameDevelopInfo">
-                                        <img src="${item.pro_anli_imgs[0]}" alt="">
-                                        <b>
-                                            <p>查看详情</p>
-                                        </b>
-                                    </div>
-                                    <div class="classify-info">
-                                        <p>${item.pro_date}</p>
-                                        <h3>${item.pro_title}</h3>
-                                        <p>${item.pro_sort[2]}</p>
-                                        <p>-</p>
-                                        <p>${item.pro_introduce.length>40?item.pro_introduce.slice(0,40)+"...":item.pro_introduce}</p>
-                                        <div>
-                                            <p>下载浏览</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            `
-                        }
-                    }).join("")
-                }
-            `)
-        })
-        var mySwiper = new Swiper('.swiper-container', {
-            speed: 700,
-            autoplay: {
-                disableOnInteraction: false,
-                delay: 2000,
-            },
-        })
-        $(".game-process li").mouseenter(function(){
-            const src = $(this).find("img:first-child").attr("src").replace(".png","-hover.png")
-            $(this).find("img:first-child").attr("src",src)
-        })
-        $(".game-process li").mouseleave(function(){
-            const src = $(this).find("img:first-child").attr("src").replace("-hover.png",".png")
-            $(this).find("img:first-child").attr("src",src)
-        })
-
-        $("article").on("click", ".classify-pic", function () {
-            const i = $(this).attr("data-index")
-            const t = $(this).attr("data-ify")
-            setWebStorage("anli-detail", JSON.stringify(dataInfo[t].content[i]))
-            location.href = "./anli-detail.html"
-        })
-    </script>
+    <script src="./js/common/store.js"></script>
+    <script src="./js/common/fixedEl.js"></script>
+    <script src="./js/gameDevelop/gameDevelop.js"></script>
 </body>
 
 </html>

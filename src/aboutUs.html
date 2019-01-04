@@ -8,79 +8,58 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/aboutUs.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/fixedEl.css">
+    <link rel="stylesheet" href="./css/common/header.css">
+    <link rel="stylesheet" href="./css/aboutUs/aboutUs.css">
+    <link rel="stylesheet" href="./css/common/footer.css">
+    <link rel="stylesheet" href="./css/common/fixedEl.css">
     <link rel="stylesheet" href="./css/swiper-4.3.5.min.css">
 </head>
 
 <body>
     <!-- 头部导航 -->
-    <header>
-        <div class="left-box">
-            <img class="header-logo" src="./images/logo.png">
-            <ul class="left-box-nav">
-                <li>
-                    <a href="./index.html">首页</a>
-                </li>
-                <li>
-                    <a href="./appDevelop.html">APP开发</a>
-                </li>
-                <li>
-                    <a href="./website.html">网站建设</a>
-                </li>
-                <li>
-                    <a href="./brand.html">品牌设计</a>
-                </li>
-                <li>
-                    <a href="./marketing.html">整合营销</a>
-                </li>
-                <li>
-                    <a href="./gameDevelop.html">游戏开发</a>
-                </li>
-            </ul>
-        </div>
-        <div class="right-box">
-            <div>
-                <div>
-                    <img class="icon-phone" src="./images/icon/icon-phone.png">
-                    <span>1对1·免费咨询：</span>
-                </div>
-                <span>028-68632175</span>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img alt="Brand" src="./images/logo.png" />
+                </a>
             </div>
-            <ul class="right-box-nav">
-                <li>
-                    <p>一分钟
-                        <br/>
-                        <span>了解聚米粒</span>
-                    </p>
-                    <div class="sec-nav">
-                        <a href="./aboutUs.html">聚米粒简介</a>
-                        <a href="./joinUs.html">加入聚米粒</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./dynamic.html">
-                        <p>精彩观点
-                            <br/>
-                            <span>聚米粒智库</span>
-                        </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./contact.html">
-                        <p>来访聚米粒
-                            <br/>
-                            <span>联系我们</span>
-                        </p>
-                    </a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./appDevelop.html">APP开发</a></li>
+                    <li><a href="./website.html">网站建设</a></li>
+                    <li><a href="./brand.html">品牌设计</a></li>
+                    <li><a href="./marketing.html">整合营销</a></li>
+                    <li><a href="./gameDevelop.html">游戏开发</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nota">
+                        <p class="navbar-text"><img src="./images/icon/icon-phone.png" /><span>1对1·免费咨询：</span><br />028-68632175</p>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false"><span>一分钟</span><br />了解聚米粒 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./aboutUs.html">聚米粒简介</a></li>
+                            <li><a href="./joinUs.html">加入聚米粒</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./dynamic.html"><span>精彩观点</span><br />聚米粒智库</a></li>
+                    <li><a href="./contact.html"><span>来访聚米粒</span><br />联系我们</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
     <!-- 子导航 -->
-    <nav>
+    <div class="nav1">
         <ul>
             <li class="bgc">
                 <a href="./aboutUs.html">聚米粒简介</a>
@@ -89,7 +68,7 @@
                 <a href="./joinUs.html">加入聚米粒</a>
             </li>
         </ul>
-    </nav>
+    </div>
     <article>
         <h4>您的位置：
             <a href="./index.html">首页</a>>了解聚米粒>
@@ -103,8 +82,8 @@
             <div class="title">
                 <h1>成都聚米粒科技有限公司</h1>
                 <p>聚米粒科技是一家具备自主知识产权的高新技术科技公司，
-                </br>我们致力于提供APP游戏及应用开发，微信应用开发、企业级系统解决方案。核心团队曾服务于BAT等大型互联网企业，
-                </br>具备大型分布式系统研发经验和运营推广经验，为政府等事业单位和知名企业提供全方位多平台的产品服务解决方案。
+                    </br>我们致力于提供APP游戏及应用开发，微信应用开发、企业级系统解决方案。核心团队曾服务于BAT等大型互联网企业，
+                    </br>具备大型分布式系统研发经验和运营推广经验，为政府等事业单位和知名企业提供全方位多平台的产品服务解决方案。
                 </p>
             </div>
             <div class="about-twopic">
@@ -129,7 +108,8 @@
             <div class="about-idear">
                 <div class="about-idear-info">
                     <h1>差异化</h1>
-                    <p>创想，终究是为了更好地解决实际问题，再好的想法，也必须通过有力的执行才能实现。 我们将多元视角带入分析，使用前沿互动技术为您创造丰富的营销手段，整合不同渠道资源，建立产品与用户之间的顺畅沟通，为您的营销找到个性答案。
+                    <p>创想，终究是为了更好地解决实际问题，再好的想法，也必须通过有力的执行才能实现。
+                        我们将多元视角带入分析，使用前沿互动技术为您创造丰富的营销手段，整合不同渠道资源，建立产品与用户之间的顺畅沟通，为您的营销找到个性答案。
                         我们在互联网行业兼具宽阔而前瞻的视野，苛求设计中的每一个环节，每一个细节。
                     </p>
                 </div>
@@ -143,7 +123,8 @@
                 </div>
                 <div class="about-idear-info">
                     <h1>聚米粒出品，自属精品</h1>
-                    <p>一支专业的执行团队，以成熟、多元的专业背景为每个项目找到突破点，确保富有弹性的设计与技术制作，输出独特、精良品质并落地交付。 纵览我们所有的长期合作伙伴，无论您的品牌有多独特，均可将重任交托于我们。 我们在互联网行业兼具宽阔而前瞻的视野，苛求设计中的每一个环节，每一个细节。
+                    <p>一支专业的执行团队，以成熟、多元的专业背景为每个项目找到突破点，确保富有弹性的设计与技术制作，输出独特、精良品质并落地交付。
+                        纵览我们所有的长期合作伙伴，无论您的品牌有多独特，均可将重任交托于我们。 我们在互联网行业兼具宽阔而前瞻的视野，苛求设计中的每一个环节，每一个细节。
                     </p>
                 </div>
             </div>
@@ -171,7 +152,7 @@
             <h1>
                 <img src="./images/icon/icon-phone.png" alt="">028-68632175</h1>
             <p>我们是一群对设计爱到狂热的人，
-                <br/>我们的成员由用户研究、交互设计、设计,博学，深知，信任，积极，责任感，对细节的尊重</p>
+                <br />我们的成员由用户研究、交互设计、设计,博学，深知，信任，积极，责任感，对细节的尊重</p>
         </div>
         <!-- 友情链接 -->
         <div class="link">
@@ -262,16 +243,16 @@
                     <img src="./images/icon/phone_1.png" alt="">
                 </a>
                 <div class="show-message">
-                        服务热线：<br />
-                        <a href="tel:028-83188035">
-                            028-68632175
-                        </a>
-                        <a href="tel:13350724957">
-                            13350724957
-                        </a>
-                        <a href="tel:18990676765">
-                            18990676765
-                        </a>
+                    服务热线：<br />
+                    <a href="tel:028-83188035">
+                        028-68632175
+                    </a>
+                    <a href="tel:13350724957">
+                        13350724957
+                    </a>
+                    <a href="tel:18990676765">
+                        18990676765
+                    </a>
                 </div>
             </li>
             <li>
@@ -285,10 +266,11 @@
         </ul>
     </div>
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="./js/swiper-4.3.5.min.js"></script>
-    <script src="./js/store.js"></script>
-    <script src="./js/fixedEl.js"></script>
-    <script>        
+    <script src="./js/common/store.js"></script>
+    <script src="./js/common/fixedEl.js"></script>
+    <script>
         var mySwiper = new Swiper('.swiper-container', {
             speed: 700,
             autoplay: {

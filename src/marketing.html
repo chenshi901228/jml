@@ -8,77 +8,56 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/marketing.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/fixedEl.css">
+    <link rel="stylesheet" href="./css/common/header.css">
+    <link rel="stylesheet" href="./css/marketing/marketing.css">
+    <link rel="stylesheet" href="./css/common/footer.css">
+    <link rel="stylesheet" href="./css/common/fixedEl.css">
     <link rel="stylesheet" href="./css/swiper-4.3.5.min.css">
 </head>
 
 <body>
     <!-- 头部导航 -->
-    <header>
-        <div class="left-box">
-            <img class="header-logo" src="./images/logo.png">
-            <ul class="left-box-nav">
-                <li>
-                    <a href="./index.html">首页</a>
-                </li>
-                <li>
-                    <a href="./appDevelop.html">APP开发</a>
-                </li>
-                <li>
-                    <a href="./website.html">网站建设</a>
-                </li>
-                <li>
-                    <a href="./brand.html">品牌设计</a>
-                </li>
-                <li class="actived">
-                    <a href="./marketing.html">整合营销</a>
-                </li>
-                <li>
-                    <a href="./gameDevelop.html">游戏开发</a>
-                </li>
-            </ul>
-        </div>
-        <div class="right-box">
-            <div>
-                <div>
-                    <img class="icon-phone" src="./images/icon/icon-phone.png">
-                    <span>1对1·免费咨询：</span>
-                </div>
-                <span>028-68632175</span>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img alt="Brand" src="./images/logo.png" />
+                </a>
             </div>
-            <ul class="right-box-nav">
-                <li>
-                    <p>一分钟
-                        <br/>
-                        <span>了解聚米粒</span>
-                    </p>
-                    <div class="sec-nav">
-                        <a href="./aboutUs.html">聚米粒简介</a>
-                        <a href="./joinUs.html">加入聚米粒</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./dynamic.html">
-                        <p>精彩观点
-                            <br/>
-                            <span>聚米粒智库</span>
-                        </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./contact.html">
-                        <p>来访聚米粒
-                            <br/>
-                            <span>联系我们</span>
-                        </p>
-                    </a>
-                </li>  
-            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./appDevelop.html">APP开发</a></li>
+                    <li><a href="./website.html">网站建设</a></li>
+                    <li><a href="./brand.html">品牌设计</a></li>
+                    <li class="active"><a href="./marketing.html">整合营销</a></li>
+                    <li><a href="./gameDevelop.html">游戏开发</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nota">
+                        <p class="navbar-text"><img src="./images/icon/icon-phone.png" /><span>1对1·免费咨询：</span><br />028-68632175</p>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false"><span>一分钟</span><br />了解聚米粒 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./aboutUs.html">聚米粒简介</a></li>
+                            <li><a href="./joinUs.html">加入聚米粒</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./dynamic.html"><span>精彩观点</span><br />聚米粒智库</a></li>
+                    <li><a href="./contact.html"><span>来访聚米粒</span><br />联系我们</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
     <!-- 头部轮播图 -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -103,25 +82,25 @@
                     <img src="./images/marketing/icon_03.png" alt="">
                     <h3>整合营销</h3>
                     <p>创意先导，渠道整合，不只信息基础覆盖
-                        <br/>更可全网传导，提升品牌存在感</p>
+                        <br />更可全网传导，提升品牌存在感</p>
                 </li>
                 <li>
                     <img src="./images/marketing/icon_05.png" alt="">
                     <h3>网络推广</h3>
                     <p>创意为先，精准定位，资深营销人负责
-                        <br/>专业团队全力协作</p>
+                        <br />专业团队全力协作</p>
                 </li>
                 <li>
                     <img src="./images/marketing/icon_07.png" alt="">
                     <h3>新媒体运营</h3>
                     <p>业内运营小咖领衔，合作品牌数百家
-                        <br/>微信、微博一站式托管运营</p>
+                        <br />微信、微博一站式托管运营</p>
                 </li>
                 <li>
                     <img src="./images/marketing/icon_09.png" alt="">
                     <h3>品牌传播</h3>
                     <p>注重品牌细节，多年锤炼，以文策为基
-                        <br/>全方位传播，助力深度传播</p>
+                        <br />全方位传播，助力深度传播</p>
                 </li>
             </ul>
             <!-- <ol>
@@ -150,7 +129,7 @@
                 </div>
                 <div class="left-bottom">
                     <h5>了解聚米粒
-                        <br/>
+                        <br />
                         <span>Understanding JML</span>
                     </h5>
                     <p>聚米粒助力企业实现互联网商业价值</p>
@@ -226,7 +205,7 @@
                     <div>
                         <span>有效</span>
                         <span>一站式整合营销服务
-                            <br/>从策划、定位到推广，助企业打造成为行业标杆</span>
+                            <br />从策划、定位到推广，助企业打造成为行业标杆</span>
                     </div>
                 </div>
             </div>
@@ -282,7 +261,10 @@
             <div>
                 <a href="./marketing-anli.html">
                     <span>浏览更多案例</span>
-                    <img src="./images/icon/fill.png" alt="">
+                    <b>
+                        <img src="./images/icon/fill_1.png" alt="">
+                        <img src="./images/icon/fill.png" alt="">
+                    </b>
                 </a>
             </div>
         </div>
@@ -310,20 +292,17 @@
             <ul>
                 <li>
                     <a href="./brand.html">
-                        <img src="./images/APPtansuo_03.gif"
-                            alt="">
+                        <img src="./images/APPtansuo_03.gif" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="./marketing.html">
-                        <img src="./images/APPtansuo_05.gif"
-                            alt="">
+                        <img src="./images/APPtansuo_05.gif" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="./appDevelop.html">
-                        <img src="./images/APPtansuo_07.gif"
-                            alt="">
+                        <img src="./images/APPtansuo_07.gif" alt="">
                     </a>
                 </li>
             </ul>
@@ -416,16 +395,16 @@
                     <img src="./images/icon/phone_1.png" alt="">
                 </a>
                 <div class="show-message">
-                        服务热线：<br />
-                        <a href="tel:028-83188035">
-                            028-68632175
-                        </a>
-                        <a href="tel:13350724957">
-                            13350724957
-                        </a>
-                        <a href="tel:18990676765">
-                            18990676765
-                        </a>
+                    服务热线：<br />
+                    <a href="tel:028-83188035">
+                        028-68632175
+                    </a>
+                    <a href="tel:13350724957">
+                        13350724957
+                    </a>
+                    <a href="tel:18990676765">
+                        18990676765
+                    </a>
                 </div>
             </li>
             <li>
@@ -439,78 +418,11 @@
         </ul>
     </div>
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="./js/swiper-4.3.5.min.js"></script>
-    <script src="./js/store.js"></script>
-    <script src="./js/fixedEl.js"></script>
-    <script>        
-        var mySwiper = new Swiper('.swiper-container', {
-            speed: 700,
-            autoplay: {
-                disableOnInteraction: false,
-                delay: 2000,
-            },
-        })
-
-        $(function(){
-            $(".classify-title").after(`
-                ${
-                    dataInfo.marketInfo.content.slice(0,3).map(item=>{
-                        if(item.id%2!=0){
-                            return `
-                                <div class="classify">
-                                    <div class="classify-info">
-                                        <p>${item.pro_date}</p>
-                                        <h3>${item.pro_title}</h3>
-                                        <p>${item.pro_sort[2]}</p>
-                                        <p>-</p>
-                                        <p>${item.pro_introduce.length>40?item.pro_introduce.slice(0,40)+"...":item.pro_introduce}</p>
-                                        <div>
-                                            <p>下载浏览</p>
-                                        </div>
-                                    </div>
-                                    <div class="classify-pic" data-index=${item.id} data-ify="marketInfo">
-                                        <img src="${item.pro_anli_imgs[0]}" alt="">
-                                        <b>
-                                            <p>查看详情</p>
-                                        </b>
-                                    </div>
-                                </div>
-                            `
-                        }else{
-                            return `
-                                <div class="classify">
-                                    <div class="classify-pic" data-index=${item.id} data-ify="marketInfo">
-                                        <img src="${item.pro_anli_imgs[0]}" alt="">
-                                        <b>
-                                            <p>查看详情</p>
-                                        </b>
-                                    </div>
-                                    <div class="classify-info">
-                                        <p>${item.pro_date}</p>
-                                        <h3>${item.pro_title}</h3>
-                                        <p>${item.pro_sort[2]}</p>
-                                        <p>-</p>
-                                        <p>${item.pro_introduce.length>40?item.pro_introduce.slice(0,40)+"...":item.pro_introduce}</p>
-                                        <div>
-                                            <p>下载浏览</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            `
-                        }
-                    }).join("")
-                }
-            `)
-        })
-
-        $("article").on("click", ".classify-pic", function () {
-            const i = $(this).attr("data-index")
-            const t = $(this).attr("data-ify")
-            setWebStorage("anli-detail", JSON.stringify(dataInfo[t].content[i]))
-            location.href = "./anli-detail.html"
-        })
-
-    </script>
+    <script src="./js/common/store.js"></script>
+    <script src="./js/common/fixedEl.js"></script>
+    <script src="./js/marketing/marketing.js"></script>
 </body>
 
 </html>

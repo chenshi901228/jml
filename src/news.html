@@ -8,78 +8,57 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/news.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/fixedEl.css">
+    <link rel="stylesheet" href="./css/common/header.css">
+    <link rel="stylesheet" href="./css/news/news.css">
+    <link rel="stylesheet" href="./css/common/footer.css">
+    <link rel="stylesheet" href="./css/common/fixedEl.css">
 </head>
 
 <body>
     <!-- 头部导航 -->
-    <header>
-        <div class="left-box">
-            <img class="header-logo" src="./images/logo.png">
-            <ul class="left-box-nav">
-                <li>
-                    <a href="./index.html">首页</a>
-                </li>
-                <li>
-                    <a href="./appDevelop.html">APP开发</a>
-                </li>
-                <li>
-                    <a href="./website.html">网站建设</a>
-                </li>
-                <li>
-                    <a href="./brand.html">品牌设计</a>
-                </li>
-                <li>
-                    <a href="./marketing.html">整合营销</a>
-                </li>
-                <li>
-                    <a href="./gameDevelop.html">游戏开发</a>
-                </li>
-            </ul>
-        </div>
-        <div class="right-box">
-            <div>
-                <div>
-                    <img class="icon-phone" src="./images/icon/icon-phone.png">
-                    <span>1对1·免费咨询：</span>
-                </div>
-                <span>028-68632175</span>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img alt="Brand" src="./images/logo.png" />
+                </a>
             </div>
-            <ul class="right-box-nav">
-                <li>
-                    <p>一分钟
-                        <br/>
-                        <span>了解聚米粒</span>
-                    </p>
-                    <div class="sec-nav">
-                        <a href="./aboutUs.html">聚米粒简介</a>
-                        <a href="./joinUs.html">加入聚米粒</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./dynamic.html">
-                        <p>精彩观点
-                            <br/>
-                            <span>聚米粒智库</span>
-                        </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./contact.html">
-                        <p>来访聚米粒
-                            <br/>
-                            <span>联系我们</span>
-                        </p>
-                    </a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./appDevelop.html">APP开发</a></li>
+                    <li><a href="./website.html">网站建设</a></li>
+                    <li><a href="./brand.html">品牌设计</a></li>
+                    <li><a href="./marketing.html">整合营销</a></li>
+                    <li><a href="./gameDevelop.html">游戏开发</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nota">
+                        <p class="navbar-text"><img src="./images/icon/icon-phone.png" /><span>1对1·免费咨询：</span><br />028-68632175</p>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false"><span>一分钟</span><br />了解聚米粒 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./aboutUs.html">聚米粒简介</a></li>
+                            <li><a href="./joinUs.html">加入聚米粒</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./dynamic.html"><span>精彩观点</span><br />聚米粒智库</a></li>
+                    <li><a href="./contact.html"><span>来访聚米粒</span><br />联系我们</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
     <!-- 子导航 -->
-    <nav>
+    <div class="nav1">
         <ul>
             <li>
                 <a href="./dynamic.html">聚米粒智库</a>
@@ -88,7 +67,7 @@
                 <a href="./news.html">聚米粒新闻</a>
             </li>
         </ul>
-    </nav>
+    </div>
     <article>
         <h4>您的位置：
             <a href="./index.html">首页</a>>
@@ -110,20 +89,17 @@
             <ul>
                 <li>
                     <a href="./brand.html">
-                        <img src="./images/APPtansuo_03.gif"
-                            alt="">
+                        <img src="./images/APPtansuo_03.gif" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="./marketing.html">
-                        <img src="./images/APPtansuo_05.gif"
-                            alt="">
+                        <img src="./images/APPtansuo_05.gif" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="./appDevelop.html">
-                        <img src="./images/APPtansuo_07.gif"
-                            alt="">
+                        <img src="./images/APPtansuo_07.gif" alt="">
                     </a>
                 </li>
             </ul>
@@ -216,16 +192,16 @@
                     <img src="./images/icon/phone_1.png" alt="">
                 </a>
                 <div class="show-message">
-                        服务热线：<br />
-                        <a href="tel:028-83188035">
-                            028-68632175
-                        </a>
-                        <a href="tel:13350724957">
-                            13350724957
-                        </a>
-                        <a href="tel:18990676765">
-                            18990676765
-                        </a>
+                    服务热线：<br />
+                    <a href="tel:028-83188035">
+                        028-68632175
+                    </a>
+                    <a href="tel:13350724957">
+                        13350724957
+                    </a>
+                    <a href="tel:18990676765">
+                        18990676765
+                    </a>
                 </div>
             </li>
             <li>
@@ -239,68 +215,10 @@
         </ul>
     </div>
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="./js/store.js"></script>
-    <script src="./js/fixedEl.js"></script>
-    <script>
-        const pageAll = Math.ceil(dataInfo.newsInfo.length/12)
-        function init(i){
-            $(".dynamic-list ul").html(`
-                ${
-                    dataInfo.newsInfo.slice(0,12).map(item=>{
-                        return `
-                            <li data-index=${item.id} data-ify="newsInfo">
-                                <div>
-                                    <img src="${item.news_img[0]}" alt="">
-                                    <b>
-                                        <p>查看更多</p>
-                                    </b>
-                                </div>
-                                <div>
-                                    <div class="time-title">
-                                        <h2>${item.news_date.slice(8,10)}
-                                            <br/>
-                                            <span>${item.news_date.slice(0,4)}.${item.news_date.slice(5,7)}</span>
-                                        </h2>
-                                        <p>${item.news_title.length>28?item.news_title.slice(0,28)+"...":item.news_title}</p>
-                                    </div>
-                                    <div class="dynamic-link">
-                                        <p>查看详情</p>
-                                        <img src="./images/icon/right__03.jpg" alt="">
-                                    </div>
-                                </div>
-                            </li>
-                            `
-                        }).join("")
-                    }
-            `)
-        }
-        $(function(){
-            init(0)
-            for(let i=0;i<pageAll;i++){
-                $(".dynamic-pagination ul").append(`
-                    <li>
-                        <a href="javascript:void(0);" data-index=${i}>${i+1}</a>
-                    </li>
-                `)
-            }
-        })
-        $(".dynamic-pagination").on("click","a",function(){
-            const i = $(this).attr("data-index")
-            for(let j=0;j<pageAll;j++){
-                $(".dynamic-pagination a")[j].style.color = "#000"
-                $(".dynamic-pagination a")[j].style.backgroundColor = "rgb(243, 243, 243)"
-            }
-            $(this)[0].style.color = "#fff"
-            $(this)[0].style.backgroundColor = "#b41b1d"
-            init(i*12)
-        })
-        $(".dynamic-list").on("click","li",function(){
-            const i = $(this).attr("data-index")
-            const t = $(this).attr("data-ify")
-            setWebStorage("news-detail", JSON.stringify(dataInfo[t][i]))
-            location.href = "./news-detail.html"
-        })
-    </script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./js/common/store.js"></script>
+    <script src="./js/common/fixedEl.js"></script>
+    <script src="./js/news/news.js"></script>
 </body>
 
 </html>

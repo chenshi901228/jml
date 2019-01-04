@@ -45,9 +45,8 @@ $(function ($) {
     const height = $(window).height() - 106
     $('.swiper-container')[0].style.height = $(window).height() + "px"
     $('.swiper-container')[0].style.top = 0
-    $('header')[0].style.top = height + "px"
-    $("header .left-box")[0].style.background = "transparent"
-    $("header .right-box")[0].style.background = "transparent"
+    $('nav')[0].style.top = height + "px"
+    $("nav")[0].style.background = "transparent"
 
     for (let i = 0; i < $("header a").length; i++) {
         $("header a")[i].style.color = "#fff"
@@ -157,12 +156,11 @@ $(".classify1").on("click", "a", function () {
 
 var scrollFunc = function () {
     $(".swiper-container")[0].style.height = 0
-    $('header')[0].style.top = 0
+    $('nav')[0].style.top = 0
     $(".brand-title").show("slow")
     $("footer").show()
     $("article")[0].style.display = "block"
-    $("header .left-box")[0].style.backgroundColor = "#EBEBEB"
-    $("header .right-box")[0].style.backgroundColor = "#F5F5F5"
+    $("nav")[0].style.backgroundColor = "#EBEBEB"
 
     for (let i = 0; i < $("header a").length; i++) {
         $("header a")[i].style.color = "#000"
