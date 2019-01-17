@@ -198,9 +198,9 @@ article .introduce .right-bottom{
     cursor: pointer;
     border-bottom: 4px solid #FF6347;
 }
-.top-show .cooperation img{
-    width: 100px;
-    height: 86px;
+.top-show .cooperation li{
+    padding-bottom: 50px;
+    border-bottom: 4px solid #fff;
 }
 .cooperationTile{
     width: 90px;

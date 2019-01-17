@@ -55,6 +55,9 @@ html,body{
     .navbar .container .navbar-nav{
         display: none;
     }
+    .navbar .shop{
+        display: none
+    }
 }
 @media screen and (max-width:767px){
     .navbar .container .navbar-nav{
@@ -120,4 +123,18 @@ html,body{
     text-align: center;
     line-height: 38px;
     padding-bottom: 0;
+}
+.navbar .shop{
+    position: fixed;
+    z-index: 50;
+    top: 50px;
+    right: 5%;
+}
+.navbar .shop a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: #666
+}
+.navbar .shop a:hover{
+    color: orangered
 }

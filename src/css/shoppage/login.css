@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body,.container,.wrap{
+	width: 100%;
+	height: 100%;
+}
+em{
+	font-style: normal;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+}
+li{
+	list-style: none;
+	display: inline-block;
+	border-right: 1px solid #000;
+}
+.clear{
+	clear: both;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('../../images/brand/brand_banner_1.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+header,footer,section{
+	width: 1300px;
+	margin:0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/*澶撮儴鏍峰紡*/
+header img{
+	width: 200px;
+    height: 50px;
+}
+header span{
+	font-size: 20px;
+	margin-left:20px;
+}
+
+article{
+	width: 100%;
+	height: 100%;
+}
+section{
+	height: 600px;
+	position: relative;
+}
+
+/*琛ㄥ崟鐨勬牱寮�*/
+aside{
+	width: 400px;
+	height: 450px;
+	position: absolute;
+	top: 70px;
+	right: 100px;
+	background-color:#fff9;
+	border-radius: 15px;
+}
+aside em{
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: 25px auto 10px auto;
+}
+aside em img{
+	width: 100%;
+	height: auto;
+}
+form {
+	width: 300px;
+	margin: 0 auto;
+}
+form p{
+	position: relative;
+	margin-top: 10px;
+}
+form input{
+	padding-left: 50px;
+	width: 250px;
+	height: 40px;
+	border:1px solid #47414133;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color:rgba(255, 255, 255, 0.82);
+	outline: none;
+}
+form i{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+}
+.name i{
+	background-image: url("../../images/icon/mine.png");
+	background-repeat: no-repeat;
+	left: 10px;
+    top: 27px;
+    background-size: 100% 100%;
+}
+.password i{
+	background-image: url("../../images/icon/pas.png");
+	background-repeat: no-repeat;
+	left: 10px;
+    top: 29px;
+    background-size: 100% 100%;
+}
+button{
+	background-color:#00a0e9;
+	border:none;
+	width: 100%;
+	height: 40px;
+	letter-spacing: 3px;
+	font-size: 20px;
+	margin-top: 35px;
+	border-radius: 10px;
+	color: #fff;
+	outline: none;
+}
+button:hover{
+    cursor: pointer;
+}
+.remember{
+	width: 170px;
+}
+.remember input{
+	width: 24px;
+	height: 24px;
+	background-image: url("../img/rememberPassword1.png");
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance:none;
+    padding-left: 0px;
+    border-radius: 0px;
+    background-color: rgba(0,0,0,0);
+    border:none;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+.remember input:checked{	
+	background-image: url("../img/rememberPassword2.png");
+}
+.remember,.regist{
+	float: left;
+	font-size: 15px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 20px;
+}
+.regist{
+	width: 130px;
+}
+.regist a{
+	color: red;
+}

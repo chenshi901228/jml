@@ -330,7 +330,7 @@ article .classify-title{
     color: #fff;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 article .classify-title-h1{
     font-size: 34px;
